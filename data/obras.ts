@@ -82,4 +82,74 @@ export const obras: Obra[] = [
     "/sd/rieles.jpg"
   ]
   },
+  {
+    id: "obra-7",
+    titulo: "Monorriel Santiago de los Caballeros",
+    descripcion: "Construcción del primer Monorriel del Caribe con 13km de longitud.",
+    inversion: "INVERSIÓN RD$ 33,000 MILLONES",
+    ubicacion: {
+      provincia: "Santiago",
+      municipio: "Santiago de los Caballeros",
+      sector: "Centro",
+      lat: 19.456628,
+      lng: -70.707028
+    },
+    imagenes: ["/santiago/monoriel.jpg"]
+  },
+  {
+    id: "obra-8",
+    titulo: "Teleférico Santiago",
+    descripcion: "Sistema de 6.5 km integrado al Monorriel para transformar la movilidad urbana.",
+    inversion: "INVERSIÓN RD$ 6,500 MILLONES",
+    ubicacion: {
+      provincia: "Santiago",
+      municipio: "Santiago de los Caballeros",
+      sector: "Centro",
+      lat: 19.456306,
+      lng: -70.707063
+    },
+    imagenes: ["/santiago/telefericosantiago.jpg"]
+  },
+  {
+    id: "obra-9",
+    titulo: "Circunvalación Norte",
+    descripcion: "Para conectar Tamboril con Cienfuegos y mantenimiento a esta importante vía.",
+    inversion: "INVERSIÓN RD$ 2,126 MILLONES",
+    ubicacion: {
+      provincia: "Santiago",
+      municipio: "Santiago de los Caballeros",
+      sector: "Circunvalación Norte",
+      lat: 19.456306,
+      lng: -70.707063
+    },
+    imagenes: ["/santiago/circunvalacion.jpg"]
+  },
+  {
+    id: "obra-10",
+    titulo: "Saneamiento Arroyo Gurabo Santiago",
+    descripcion: "Arroyo Gurabo: estamos llevando agua potable, saneamiento y espacios de recreación sana para todas las comunidades que habitan en la zona.",
+    inversion: "INVERSIÓN RD$ 1,392 MILLONES",
+    ubicacion: {
+      provincia: "Santiago",
+      municipio: "Santiago de los Caballeros",
+      sector: "Arroyo Gurabo",
+      lat: 19.480518,
+      lng: -70.687312
+    },
+    imagenes: ["/santiago/arroyo.jpg"]
+  },
+  {
+    id: "obra-11",
+    titulo: "Vivienda Hato del Yaque",
+    descripcion: "Mi Vivienda Hato del Yaque beneficia a más de 4 mil personas que vivían en condiciones de vulnerabilidad a las orillas de cañadas y ríos de Arroyo Gurabo.",
+    inversion: "INVERSIÓN RD$ 2,700 MILLONES",
+    ubicacion: {
+      provincia: "Santiago",
+      municipio: "Santiago de los Caballeros",
+      sector: "Hato del Yaque",
+      lat: 19.446506,
+      lng: -70.801597
+    },
+    imagenes: ["/santiago/hato del yaque.jpg"]
+  },
 ];
