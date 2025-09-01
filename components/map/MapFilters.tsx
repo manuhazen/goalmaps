@@ -6,6 +6,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Checkbox } from "@/components/ui/checkbox";
 import { ProvinciasCombobox } from "@/components/map/ProvinciasCombobox";
 import { EstadoObra } from "@/lib/types";
+import { cn } from "@/lib/utils";
+import { SlidersHorizontal } from "lucide-react";
 
 export type MapFiltersState = {
   estados: EstadoObra[];
@@ -77,14 +79,49 @@ export function MapFilters({
 
   return (
     <>
-      {/* Floating card visible en todas las vistas (mobile+desktop) */}
-      <div className="absolute top-4 left-4 z-20 w-[min(92vw,360px)]">
+      {/* Mobile: botón muy reducido que aparece cuando está colapsado */}
+      {collapsed && (
+        <div className="md:hidden absolute top-4 left-4 z-30">
+          <Button
+            size="icon"
+            variant="secondary"
+            onClick={() => setCollapsed(false)}
+            aria-label="Mostrar filtros"
+          >
+            <SlidersHorizontal size={18} className="opacity-80" />
+          </Button>
+        </div>
+      )}
+
+      {/* Tarjeta flotante: en mobile se oculta totalmente cuando está colapsada; en desktop siempre visible (colapsa solo el contenido) */}
+      <div
+        className={cn(
+          "absolute top-4 left-4 z-20 w-[min(92vw,360px)]",
+          collapsed ? "hidden md:block" : "block"
+        )}
+      >
         <Card className="shadow-lg">
           <CardHeader className="pb-2 flex items-center justify-between">
             <CardTitle className="text-base">Filtros ({total})</CardTitle>
-            <Button size="sm" variant="ghost" onClick={() => setCollapsed((v) => !v)}>
-              {collapsed ? "Mostrar" : "Ocultar"}
-            </Button>
+            <div className="flex items-center gap-2">
+              {/* Mobile: botón compacto para colapsar */}
+              <div className="md:hidden">
+                <Button
+                  size="icon"
+                  variant="ghost"
+                  onClick={() => setCollapsed(true)}
+                  aria-label="Ocultar filtros"
+                >
+                  <SlidersHorizontal size={18} />
+                </Button>
+              </div>
+              {/* Desktop: texto Mostrar/Ocultar */}
+              <div className="hidden md:block">
+                <Button size="sm" variant="ghost" onClick={() => setCollapsed((v) => !v)}>
+                  {collapsed ? "Mostrar" : "Ocultar"}
+                </Button>
+              </div>
+            </div>
           </CardHeader>
           {!collapsed && <CardContent>{FilterForm}</CardContent>}
         </Card>

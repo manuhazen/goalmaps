@@ -39,7 +39,10 @@ export function ObrasMap() {
   const { data: obras, isLoading } = useObras();
   const [selected, setSelected] = useState<Obra | null>(null);
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const [filters, setFilters] = useState<MapFiltersState>({ estados: [], provincias: [] });
+  const [filters, setFilters] = useState<MapFiltersState>({
+    estados: [],
+    provincias: [],
+  });
 
   const onMarkerClick = useCallback((obra: Obra) => {
     setSelected(obra);
