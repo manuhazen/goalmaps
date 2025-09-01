@@ -12,9 +12,10 @@ export type Obra = {
   id: string;
   titulo: string;
   descripcion?: string;
-  fechaInicio: string; // ISO date
-  fechaEntrega: string; // ISO date
-  estado: EstadoObra;
+  // fechaInicio: string; // ISO date
+  // fechaEntrega: string; // ISO date
+  // estado: EstadoObra;
+  inversion: string;
   ubicacion: Ubicacion;
   imagenes?: string[];
   videos?: string[];
