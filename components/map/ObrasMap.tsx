@@ -1,6 +1,11 @@
 "use client";
 
-import { GoogleMap, Marker, useLoadScript, GoogleMarkerClusterer } from "@react-google-maps/api";
+import {
+  GoogleMap,
+  Marker,
+  useLoadScript,
+  GoogleMarkerClusterer,
+} from "@react-google-maps/api";
 import { useMemo, useState, useCallback } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { obras as obrasLocales } from "@/data/obras";
@@ -35,10 +40,7 @@ export function ObrasMap() {
   const { data: obras, isLoading } = useObras();
   const [selected, setSelected] = useState<Obra | null>(null);
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const [filters, setFilters] = useState<MapFiltersState>({
-    estados: [],
-    provincias: [],
-  });
+  const [filters, setFilters] = useState<MapFiltersState>({ provincias: [] });
 
   const onMarkerClick = useCallback((obra: Obra) => {
     setSelected(obra);
@@ -63,12 +65,10 @@ export function ObrasMap() {
   const filteredObras = useMemo(() => {
     if (!obras) return [] as Obra[];
     return obras.filter((o) => {
-      const matchEstado =
-        filters.estados.length === 0 || filters.estados.includes(o.estado);
       const matchProvincia =
         filters.provincias.length === 0 ||
         filters.provincias.includes(o.ubicacion.provincia);
-      return matchEstado && matchProvincia;
+      return matchProvincia;
     });
   }, [obras, filters]);
 

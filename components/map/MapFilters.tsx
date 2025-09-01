@@ -3,14 +3,11 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Checkbox } from "@/components/ui/checkbox";
 import { ProvinciasCombobox } from "@/components/map/ProvinciasCombobox";
-import { EstadoObra } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { SlidersHorizontal } from "lucide-react";
 
 export type MapFiltersState = {
-  estados: EstadoObra[];
   provincias: string[];
 };
 
@@ -27,37 +24,11 @@ export function MapFilters({
 }) {
   const [collapsed, setCollapsed] = useState(false); // puede cerrarse, por defecto abierto
 
-  const ESTADOS: EstadoObra[] = ["en_proceso", "finalizada", "cancelada"];
-
-  const toggleEstado = (estado: EstadoObra) => {
-    const set = new Set(filters.estados);
-    if (set.has(estado)) set.delete(estado);
-    else set.add(estado);
-    setFilters({ ...filters, estados: Array.from(set) as EstadoObra[] });
-  };
-
-  const clearFilters = () => setFilters({ estados: [], provincias: [] });
+  const clearFilters = () => setFilters({ provincias: [] });
 
   const FilterForm = (
     <div className="space-y-3">
-      <div>
-        <div className="text-sm font-medium mb-2">Estado</div>
-        <div className="flex flex-col gap-2">
-          {ESTADOS.map((e) => {
-            const selected = filters.estados.includes(e);
-            return (
-              <label key={e} className="flex items-center gap-2 text-sm">
-                <Checkbox
-                  checked={selected}
-                  onChange={() => toggleEstado(e)}
-                  aria-label={`Estado ${e}`}
-                />
-                <span>{e === "en_proceso" ? "En proceso" : e === "finalizada" ? "Finalizada" : "Cancelada"}</span>
-              </label>
-            );
-          })}
-        </div>
-      </div>
+      {/* Estado filter removed as requested */}
 
       <div>
         <label className="text-sm font-medium mb-2 block">Provincias</label>

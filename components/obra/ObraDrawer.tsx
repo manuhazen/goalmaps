@@ -2,26 +2,11 @@
 
 import { Drawer, DrawerContent, DrawerHeader, DrawerTitle, DrawerDescription, DrawerClose } from "@/components/ui/drawer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Progress } from "@/components/ui/progress";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
-import { Obra, progresoObra } from "@/lib/types";
-
-export function estadoLabel(estado: Obra["estado"]) {
-  switch (estado) {
-    case "en_proceso":
-      return "En proceso";
-    case "finalizada":
-      return "Finalizada";
-    case "cancelada":
-      return "Cancelada";
-    default:
-      return estado;
-  }
-}
+import { Obra } from "@/lib/types";
 
 export function ObraDrawer({ obra, open, onOpenChange }: { obra: Obra | null; open: boolean; onOpenChange: (open: boolean) => void }) {
-  const progress = obra ? progresoObra(obra.fechaInicio, obra.fechaEntrega) : 0;
 
   return (
     <Drawer open={open} onOpenChange={onOpenChange} direction="right">
@@ -54,20 +39,12 @@ export function ObraDrawer({ obra, open, onOpenChange }: { obra: Obra | null; op
             </CardHeader>
             <CardContent className="space-y-2 text-sm">
               <div><span className="font-medium">Inversion:</span> {obra?.inversion}</div>
-              {/* <div><span className="font-medium">Estado:</span> {obra ? estadoLabel(obra.estado) : ""}</div> */}
-              {/* <div><span className="font-medium">Fecha de inicio:</span> {obra?.fechaInicio}</div> */}
-              {/* <div><span className="font-medium">Fecha de entrega:</span> {obra?.fechaEntrega}</div> */}
+              {/* Estado, fecha inicio/entrega removidos del modelo */}
               <div>
                 <span className="font-medium">Ubicación:</span>{" "}
                 {obra ? `${obra.ubicacion.provincia}, ${obra.ubicacion.municipio}${obra.ubicacion.sector ? ", " + obra.ubicacion.sector : ""}` : ""}
               </div>
-              {/* <div className="pt-2">
-                <div className="flex items-center justify-between text-sm mb-2">
-                  <span className="font-medium">Avance</span>
-                  <span>{progress}%</span>
-                </div>
-                <Progress value={progress} />
-              </div> */}
+              {/* Progreso removido (no fechas en el modelo) */}
             </CardContent>
           </Card>
 
@@ -81,4 +58,3 @@ export function ObraDrawer({ obra, open, onOpenChange }: { obra: Obra | null; op
     </Drawer>
   );
 }
-
