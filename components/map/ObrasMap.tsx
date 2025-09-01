@@ -1,11 +1,6 @@
 "use client";
 
-import {
-  GoogleMap,
-  Marker,
-  useLoadScript,
-  MarkerClusterer,
-} from "@react-google-maps/api";
+import { GoogleMap, Marker, useLoadScript, GoogleMarkerClusterer } from "@react-google-maps/api";
 import { useMemo, useState, useCallback } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { obras as obrasLocales } from "@/data/obras";
@@ -14,6 +9,7 @@ import { ObraDrawer } from "@/components/obra/ObraDrawer";
 import { createRDBounds } from "@/lib/rd-bounds";
 import { Skeleton } from "@/components/ui/skeleton";
 import { MapFilters, MapFiltersState } from "@/components/map/MapFilters";
+import { ClusterRenderer } from "@/lib/cluster-renderer";
 
 const mapContainerStyle = { width: "100%", height: "100%" } as const;
 
@@ -104,7 +100,7 @@ export function ObrasMap() {
         onLoad={mapOnLoad}
         mapContainerStyle={mapContainerStyle}
         center={center}
-        zoom={7}
+        zoom={8}
         options={{
           disableDefaultUI: false,
           clickableIcons: false,
@@ -114,7 +110,7 @@ export function ObrasMap() {
         }}
       >
         {!isLoading && filteredObras && filteredObras.length > 0 && (
-          <MarkerClusterer>
+          <GoogleMarkerClusterer options={{ renderer: ClusterRenderer as any }}>
             {(clusterer) => (
               <>
                 {filteredObras.map((obra) => (
@@ -131,7 +127,7 @@ export function ObrasMap() {
                 ))}
               </>
             )}
-          </MarkerClusterer>
+          </GoogleMarkerClusterer>
         )}
       </GoogleMap>
 
