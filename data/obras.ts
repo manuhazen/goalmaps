@@ -149,6 +149,6 @@ export const obras: Obra[] = [
       lat: 19.446506,
       lng: -70.801597,
     },
-    imagenes: ["/santiago/hato del yaque.jpg"],
+    imagenes: ["/santiago/hatodelyaque.jpg"],
   },
 ];
