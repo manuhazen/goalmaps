@@ -1,5 +1,9 @@
 export default function Home() {
-  // Server Component that renders a Client Component wrapper
-  const HomeClient = require("@/components/home/HomeClient").default;
-  return <HomeClient />;
+  return (
+    <main className="min-h-[100svh] flex items-center justify-center p-8">
+      <h1 className="text-4xl md:text-6xl font-bold text-center">
+        Mete mano Quezada
+      </h1>
+    </main>
+  );
 }
