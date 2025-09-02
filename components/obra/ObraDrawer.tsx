@@ -39,10 +39,10 @@ export function ObraDrawer({ obra, open, onOpenChange }: { obra: Obra | null; op
               <CardDescription className="text-center text-gray-600">Información general de la obra</CardDescription>
             </CardHeader>
             <CardContent className="space-y-2 text-sm">
-              <div className="text-center font-semibold text-blue-900 text-2xl">{obra?.inversion}</div>
+              <div className="text-center font-medium text-blue-900 text-2xl">{obra?.inversion}</div>
               {/* Estado, fecha inicio/entrega removidos del modelo */}
-              <div>
-                <span className="font-medium">Ubicación:</span>{" "}
+              <div className="text-center">
+                <span className="font-medium"></span>{" "}
                 {obra ? `${obra.ubicacion.provincia}, ${obra.ubicacion.municipio}${obra.ubicacion.sector ? ", " + obra.ubicacion.sector : ""}` : ""}
               </div>
               {/* Progreso removido (no fechas en el modelo) */}
