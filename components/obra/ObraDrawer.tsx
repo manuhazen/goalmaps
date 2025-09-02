@@ -12,6 +12,7 @@ export function ObraDrawer({ obra, open, onOpenChange }: { obra: Obra | null; op
     <Drawer open={open} onOpenChange={onOpenChange} direction="right">
       <DrawerContent className="w-full sm:max-w-md">
         <DrawerHeader>
+          <img className="w-72 mx-auto" src="/logopresidencia.svg" alt="Logo Presidencia" />
           <DrawerTitle>{obra?.titulo ?? "Obra"}</DrawerTitle>
           {obra?.descripcion ? <DrawerDescription>{obra.descripcion}</DrawerDescription> : null}
         </DrawerHeader>
@@ -34,11 +35,11 @@ export function ObraDrawer({ obra, open, onOpenChange }: { obra: Obra | null; op
 
           <Card>
             <CardHeader>
-              <CardTitle>Detalles</CardTitle>
-              <CardDescription>Información general de la obra</CardDescription>
+              <CardTitle className="text-center">Detalles</CardTitle>
+              <CardDescription className="text-center text-gray-600">Información general de la obra</CardDescription>
             </CardHeader>
             <CardContent className="space-y-2 text-sm">
-              <div><span className="font-medium">Inversion:</span> {obra?.inversion}</div>
+              <div className="text-center font-semibold text-blue-900 text-2xl">{obra?.inversion}</div>
               {/* Estado, fecha inicio/entrega removidos del modelo */}
               <div>
                 <span className="font-medium">Ubicación:</span>{" "}
