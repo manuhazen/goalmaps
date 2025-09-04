@@ -31,18 +31,18 @@ export default function Home() {
               VIDAS
             </h1>
           </div>
-          <div className="flex flex-col items-center bg-white p-8">
+          <div className="flex flex-col items-center bg-white p-8 pb-20">
             <h1 className="text-center text-5xl font-bold text-bold text-black">
               ¡Entra aquí
             </h1>
             <h1 className=" text-center text-5xl font-bold text-bold text-black mb-10">
               y conócelas!
             </h1>
-            <button
-              type="button"
-              className="mb-[-50px]focus:outline-none text-white bg-red-700 hover:bg-red-800 cursor-pointer focus:ring-4 focus:ring-red-300 font-normal text-lg px-5 py-2.5 me-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900 w-64 tracking-[10px] items-center text-center"
+            <a
+              href="#home-client"
+              className="mb-[-50px] focus:outline-none text-white bg-red-700 hover:bg-red-800 cursor-pointer focus:ring-4 focus:ring-red-300 font-normal text-lg px-5 py-2.5 me-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900 w-64 tracking-[10px] items-center text-center inline-flex justify-center"
             >
-              <span>VER MÁS</span>
+              VER MÁS
               <svg
                 className="w-6 h-6 text-white inline-block ml-4"
                 aria-hidden="true"
@@ -52,17 +52,17 @@ export default function Home() {
               >
                 <path
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M1 5h12m0 0L9 1m4 4L9 9"
-                ></path>
+                />
               </svg>
-            </button>
+            </a>
           </div>
         </div>
       </header>
-      <div className="w-full m-auto">
+      <div className="w-full m-auto" id="home-client">
         <HomeClient />
       </div>
 
