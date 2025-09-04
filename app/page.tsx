@@ -2,7 +2,8 @@ export default function Home() {
   return (
     <main className="min-h-screen w-full">
 
-      <header className="bg-white">
+      <header className="bg-white relative min-h-screen bg-[url(/5fotos.jpg)] bg-no-repeat bg-cover bg-center">
+        {/* <img src="/5fotos.jpg" className="absolute inset-0 w-full h-full object-cover"/> */}
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 pt-4">
             <img className="w-56 mx-auto" src="/logopresidencia.svg" alt="Logo Presidencia" />
           <div className="flex h-16 items-center justify-center">
@@ -37,6 +38,36 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4">
+      <div className="text-center items-center justify-center md:text-left max-w-3xl text-white bg-[#001b39] p-8">
+        <h1 className="text-center text-4xl md:text-6xl font-extrabold mb-0 text-sky-200">
+          5 AÑOS
+        </h1>
+        <p className="text-center text-3xl font-extrabold text-sky-200">
+          CONTRUYENDO
+        </p>
+        <h1 className="text-center text-3xl md:text-7xl font-extrabold mb-0 text-white">
+          OBRAS
+        </h1>
+        <h1 className="text-center text-2xl md:text-4xl font-extrabold mb-0 text-white">
+          QUE CAMBIAN
+        </h1>
+        <h1 className="text-center text-3xl md:text-7xl font-extrabold mb-0 text-white">
+          VIDAS
+        </h1>
+        <div className="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-4 bg-white p-8">
+          <h1 className="text-center text-3xl font-extrabold text-bold text-black">
+            ¡Entra aquí
+          </h1>
+          <h1 className="text-center text-3xl font-extrabold text-bold text-black">
+            y conócelas!
+          </h1>
+        </div>
+      </div>
+        
+      
+    </div>
       </header>
 <div className="max-w-2xl m-auto">
   <div id="default-carousel" className="relative mb-4 mt-4 ml-4" data-carousel="static">
