@@ -62,6 +62,28 @@ export default function Home() {
         </div>
       </header>
 
+      <section className="w-full bg-midnight p-10">
+        <div className="container mx-auto flex flex-row justify-center items-center content-center gap-5 p-5 m-5 w-full flex-wrap">
+          <div className="flex-1 px-2 py-2 order-1 basis-0  shrink-1 self-auto">
+            <div className="p-4 pl-24">
+              <h1 className="text-sky-200 font-extrabold text-6xl leading-16">5 AÑOS CONSTRUYENDO</h1>
+              <h1 className="text-white font-extrabold text-6xl leading-16">OBRAS QUE CAMBIAN VIDAS</h1>
+            </div>
+          </div>
+          <div className="flex-1 px-2 py-2 order-2 basis-0 shrink-1 self-auto">
+            <div className="p-4 pl-24">
+              <img className="w-40 border-b-8 border-b-red-500 pb-6 mb-6" src="/icon_persons.svg"/>
+              <p className="text-white text-sm font-extralight leading-6 w-96">Transformando el país a través de infraestructura que 
+                  genera oportunidades y mejora la calidad de vida donde 
+                  la gente tiene sus raíces</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      
+
       <section className="text-gray-700 body-font border-t border-gray-200">
         <div className="container px-5 py-24 mx-auto flex flex-wrap">
           <div className="flex flex-col text-center w-full mb-20">
