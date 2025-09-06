@@ -229,21 +229,106 @@ Y esa es la verdadera dimensión del esfuerzo de esta gestión.
             <img className="w-full object-cover object-center" src="/stock3.jpg" alt="" />
       </div>
 
-      <div className="bg-blue-900 flex w-full text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <img
-            src="/logopresidencia-white.svg"
-            alt="Gobierno logo"
-            className="w-72 mx-auto mb-2"
-          />
-          <p className="text-lg mt-6">
-            © 2025 Gobierno de la República Dominicana
-          </p>
-          <p className="text-xs text-gray-400 mt-2">
-            {/* Sistema desarrollado para la evaluación de proyectos inmobiliarios */}
-          </p>
+<footer className="bg-midnight lg:grid lg:grid-cols-6">
+  <div className="px-4 py-16 sm:px-6 lg:col-span-4 lg:px-8 lg:col-start-2">
+    <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
+      <div>
+        <p>
+          <a className="block text-2xl font-medium text-gray-900 hover:opacity-75 sm:text-3xl">
+            <img
+              src="/logopresidencia-white.svg"
+              alt="Gobierno logo"
+              className="w-56 mb-2"
+            />
+          </a>
+        </p>
+
+        <ul className="mt-8 space-y-1 text-white">
+          <li className="font-medium text-lg mb-8"> Construyendo el futuro de la República Dominicana</li>
+          <li className="font-light lg:pr-[100px] text-gray-400">Nuestro compromiso es transformar el país a través de obras de infraestructura que generen oportunidades de desarrollo y mejoren la calidad de vida de todos los ciudadanos dominicanos</li>
+        </ul>
+
+      </div>
+
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+        <div>
+          <p className="font-medium text-white text-xl border-b-4 border-red-500 pb-3 w-32 text-center">Navegación</p>
+
+          <ul className="mt-6 space-y-4 text-lg font-extralight text-white">
+            <li>
+              <a href="#" className="text-gray-400 transition hover:opacity-75">OBRAS</a>
+            </li>
+
+            <li>
+              <a href="#" className="text-gray-400 transition hover:opacity-75">GESTIÓN</a>
+            </li>
+
+            <li>
+              <a href="#" className="text-gray-400 transition hover:opacity-75">PLAN</a>
+            </li>
+
+            <li>
+              <a href="#" className="text-gray-400 transition hover:opacity-75">LÍDERES</a>
+            </li>
+
+            <li>
+              <a href="#" className="text-gray-400 transition hover:opacity-75"> MÁS INFORMACIÓN</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <p className="font-medium text-white text-xl border-b-4 border-red-500 pb-3 w-26 text-center">Contacto</p>
+
+          <ul className="mt-6 space-y-4 text-sm">
+            <li className="font-normal text-white mb-2">
+               OFICINA CENTRAL
+            </li>
+
+            <li className="text-gray-400 font-extralight ">
+              Palacio Nacional,
+              Av. México
+              esq. Dr. Delgado, 
+              Gascue, Santo Domingo, 
+              República Dominicana. 
+            </li>
+
+            <li className="font-semibold text-white mb-2">
+               TELÉFONO
+            </li>
+            <li className="text-gray-400 font-extralight ">
+               809.695.8000
+            </li>
+
+          </ul>
         </div>
       </div>
+    </div>
+
+    <div className="mt-12 border-t border-gray-100 pt-12">
+      <div className="sm:flex sm:items-center sm:justify-between text-center">
+        <p className="mt-8 text-xs text-gray-400 sm:mt-0 mb-4">
+          &copy; 2025 Gobierno de la República Dominicana
+        </p>
+        <ul className="flex flex-wrap gap-4 text-xs sm:justify-end justify-center flex-row-reverse">
+          <li>
+            <a href="#" className="text-gray-400 transition hover:opacity-75">  Política de Privacidad  </a>
+          </li>
+
+          <li>
+            <a href="#" className="text-gray-400 transition hover:opacity-75"> Términos de Uso  </a>
+          </li>
+
+          <li>
+            <a href="#" className="text-gray-400 transition hover:opacity-75"> Transparencia </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
     </main>
   );
 }

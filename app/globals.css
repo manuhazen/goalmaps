@@ -4,6 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --color-midnight: oklch(0.2494 0.0538 260.74);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -123,4 +124,5 @@
 
 html {
   scroll-behavior: smooth;
+  font-family: Poppins;
 }
