@@ -20,6 +20,28 @@ const mapContainerStyle = { width: "100%", height: "100%" } as const;
 
 const libraries: ("places" | "marker" | "geometry" | "maps")[] = [];
 
+const mapStyles = [
+  {
+    featureType: "road",
+    elementType: "geometry",
+    stylers: [{ visibility: "on" }]
+  },
+  {
+    featureType: "transit",
+    elementType: "labels.icon",
+    stylers: [{ visibility: "off" }]
+  },
+  {
+    featureType: "poi",
+    elementType: "labels.text",
+    stylers: [{ visibility: "off" }]
+  },
+  {
+    featureType: "poi",
+    stylers: [{ visibility: "off" }]
+  }
+];
+
 function useObras() {
   return useQuery({
     queryKey: ["obras"],
@@ -107,7 +129,7 @@ export function ObrasMap() {
           mapTypeControl: false,
           streetViewControl: false,
           fullscreenControl: true,
-          mapId: "c1d477847cd2c3e158a267dc",
+          styles: mapStyles,
         }}
       >
         {!isLoading && filteredObras && filteredObras.length > 0 && (
