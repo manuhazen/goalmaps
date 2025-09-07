@@ -100,13 +100,14 @@ export function ObrasMap() {
         onLoad={mapOnLoad}
         mapContainerStyle={mapContainerStyle}
         center={center}
-        zoom={8}
+        zoom={9}
         options={{
           disableDefaultUI: false,
           clickableIcons: false,
           mapTypeControl: false,
           streetViewControl: false,
           fullscreenControl: true,
+          mapId: "c1d477847cd2c3e158a267dc",
         }}
       >
         {!isLoading && filteredObras && filteredObras.length > 0 && (
