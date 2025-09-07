@@ -3,75 +3,53 @@ const HomeClient = require("@/components/home/HomeClient").default;
 export default function Home() {
   return (
     <main className="min-h-screen w-full">
-      <header className="bg-white relative min-h-screen bg-[url(/5fotos.jpg)] bg-no-repeat bg-cover bg-center">
+      <header className="bg-white relative min-h-screen bg-[url(/5fotos.jpg)] bg-no-repeat bg-cover bg-center" id="header">
         {/* <img src="/5fotos.jpg" className="absolute inset-0 w-full h-full object-cover"/> */}
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 pt-4">
           <img
             className="w-72 mx-auto"
-            src="/logopresidencia.svg"
-            alt="Logo Presidencia"
+            
           />
         </div>
+        <nav
+          className="fixed inset-x-0 top-0 z-30 mx-auto w-full max-w-screen-md border border-gray-100 bg-white/80 py-3 shadow backdrop-blur-lg md:top-6 md:rounded lg:max-w-screen-lg">
+          <div className="container mx-auto flex justify-between items-center px-8">
+            <div  className="flex items-center">
+              <a aria-current="page"  className="flex items-center">
+                  <img  className="h-20 w-auto" src="/logopresidencia.svg"  alt="Logo Presidencia"/>
+                  <p  className="sr-only">Website Title</p>
+              </a>
+            </div>
 
-        <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 position-abusolute right-[450px] mt-[-50px]">
-          <div className="text-center items-center justify-center text-white bg-[#001b39] p-8">
-            <h1 className="text-center text-4xl md:text-6xl font-extrabold mb-0 text-sky-200">
-              5 AÑOS
-            </h1>
-            <p className="text-center text-3xl font-extrabold text-sky-200">
-              CONTRUYENDO
-            </p>
-            <h1 className="text-center text-3xl md:text-7xl font-extrabold mb-0 text-white">
-              OBRAS
-            </h1>
-            <h1 className="text-center text-2xl md:text-4xl font-extrabold mb-0 text-white">
-              QUE CAMBIAN
-            </h1>
-            <h1 className="text-center text-3xl md:text-7xl font-extrabold mb-0 text-white">
-              VIDAS
-            </h1>
+            <div  className="md:hidden">
+              <button id="menu-button"  className="text-white focus:outline-none">
+                <svg  className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-4 6h4"></path>
+                </svg>
+              </button>
+            </div>
+
+            <div id="menu-items"  className="hidden md:flex flex-grow justify-end items-center space-x-4">
+              <a href="#header"  className="text-midnight hover:text-red-500 border-b-3 border-transparent hover:border-b-midnight transition ease-in-out pb-2">Inicio</a>
+              <a href="#acerca"  className="text-midnight hover:text-red-500 border-b-3 border-transparent hover:border-b-midnight transition ease-in-out pb-2">Acerca de</a>
+              <a href="#infra"  className="text-midnight hover:text-red-500 border-b-3 border-transparent hover:border-b-midnight transition ease-in-out pb-2">Infraestructura Nacional</a>
+              <a href="#contacto"  className="text-midnight hover:text-red-500 border-b-3 border-transparent hover:border-b-midnight transition ease-in-out pb-2">Contacto</a>
+            </div>
           </div>
-          <div className="flex flex-col items-center bg-white p-8 pb-20">
-            {/* <h1 className="text-center text-5xl font-bold text-bold text-black">
-              ¡Entra aquí
-            </h1> */}
-            <h1 className=" text-center text-5xl font-bold text-bold text-black mb-10">Conócelas!
-            </h1>
-            <a
-              href="#home-client"
-              className="mb-[-50px] focus:outline-none text-white bg-red-700 hover:bg-red-800 cursor-pointer focus:ring-4 focus:ring-red-300 font-normal text-lg px-5 py-2.5 me-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900 w-64 tracking-[10px] items-center text-center inline-flex justify-center"
-            >
-              VER MÁS
-              <svg
-                className="w-6 h-6 text-white inline-block ml-4"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
+      </nav>
+
       </header>
 
-      <section className="w-full bg-midnight p-10">
+      <section className="w-full bg-midnight p-10 py-24">
         <div className="container mx-auto flex flex-row justify-center items-center content-center gap-5 p-5 m-5 w-full flex-wrap">
           <div className="flex-1 px-2 py-2 order-1 basis-0  shrink-1 self-auto">
-            <div className="p-4 pl-24">
-              <h1 className="text-sky-200 font-extrabold text-6xl leading-16">5 AÑOS CONSTRUYENDO</h1>
-              <h1 className="text-white font-extrabold text-6xl leading-16">OBRAS QUE CAMBIAN VIDAS</h1>
+            <div className="p-4">
+              <h1 className="text-sky-200 font-extrabold text-3xl sm:text-6xl leading-16">5 AÑOS CONSTRUYENDO</h1>
+              <h1 className="text-white font-extrabold text-3xl sm:text-6xl leading-16">OBRAS QUE CAMBIAN VIDAS</h1>
             </div>
           </div>
           <div className="flex-1 px-2 py-2 order-2 basis-0 shrink-1 self-auto">
-            <div className="p-4 pl-24">
+            <div className="p-4">
               <img className="w-40 border-b-8 border-b-red-500 pb-6 mb-6" src="/icon_persons.svg"/>
               <p className="text-white text-sm font-extralight leading-6 w-96">Transformando el país a través de infraestructura que 
                   genera oportunidades y mejora la calidad de vida donde 
@@ -81,176 +59,74 @@ export default function Home() {
         </div>
       </section>
 
-
-      
-
-      <section className="text-gray-700 body-font border-t border-gray-200">
-        <div className="container px-5 py-24 mx-auto flex flex-wrap">
-          <div className="flex flex-col text-center w-full mb-20">
-            <h1 className="text-6xl font-bold title-font text-blue-900 mb-2">EL PAÍS QUE QUEREMOS</h1>
-            <h2 className="text-lg text-red-500 tracking-widest font-medium title-font mb-1">5 AÑOS CONTRUYENDO</h2>
-          </div>
-          <div className="flex flex-col flex-wrap -mb-10 lg:w-1/2 lg:text-left text-center p-10">
-            <div className="flex flex-col mb-10 items-center content-center">
-              <div className="flex-grow">
-                <h2 className="text-blue-900 text-2xl title-font font-semibold mb-3 leading-9">Miles de obras construidas en todo el territorio nacional con base en el cumplimiento de la ley 340-06 de Compras y Contrataciones Públicas. </h2>
-                <p className="text-base leading-7 text-blue-900">
-                  En estos primeros cinco años de gestión, hemos demostrado                           
-      que el cambio real se construye con hechos, planificación y                           
-      una visión de país que abarca a todas las regiones por igual.
-      Asumimos el reto de intervenir simultáneamente en el Norte,                           
-      Sur,  Este y Gran Santo  Domingo/Distrito  Nacional,  llevando                           
-      soluciones concretas a las 32 provincias y ejecutando Miles de 
-      obras que transforman la vida de la gente.
-      Con una inversión superior a RD$600 mil millones dentro del 
-      Plan Nacional de Infraestructura para el Desarrollo —que activa 
-      más de RD$753 mil millones— hemos priorizado proyectos 
-      que generan un impacto profundo: carreteras que conectan y 
-      abren oportunidades, hospitales que salvan vidas, escuelas y 
-      universidades que forman el talento del futuro, viviendas dignas, 
-      redes de agua potable y espacios públicos que fortalecen la 
-      comunidad
-                  </p>
-                  <p className="text-base leading-7 text-blue-900 my-4">
-                    <b>+RD$ 753 MIL MILLONES en INVERSIÓNES</b> que transforman el 
-      país 2020-2025 Plan Nacional de Inversión en infraestructura 
-      para el Desarrollo
-                  </p>
-
-                  <p className="text-base leading-7 text-blue-900 my-4">
-                    <b>+RD$ 600 MIL MILLONES Ejecutados</b>
-                  </p>
-
-                  <p className="text-base leading-7 text-blue-900 my-4">
-                    Toda esta inversión ha sido y está siendo ejecutada en estricto 
-      cumplimiento de la ley de compras y contrataciones públicas, 
-      Sujeto también al sistema de normas de la contraloría.
-                  </p>
-
-                  <p className="text-base leading-7 text-blue-900 my-4">
-      Más que cifras, son empleos, bienestar y progreso tangible,                           
-      resultado de un trabajo en equipo, cercano y eficiente, que                           
-      demuestra que la República Dominicana, aun siendo un país                           
-      pequeño, puede lograr grandes transformaciones y marcar un                           
-      nuevo rumbo para su gente
-                  </p>
-              </div>
+      <section className="w-full bg-[#F2F6F9] p-10 py-24" id="acerca">
+        <div className="container mx-auto flex flex-row justify-center items-center content-center gap-5 p-5 m-5 w-full flex-wrap">
+            <div className="w-full mb-8 px-4 flex items-center">
+              <span className="border-b-4 w-16 border-red-500"></span>
+              <span className="flex-shrink-0 text-2xl text-gray-500 font-extralight pl-4">ACERCA DE NUESTRA MISIÓN</span>
+            </div>
+          <div className="flex-1 px-2 py-2 order-1 basis-0  shrink-1 self-auto">
+            <div className="p-4">
+              <h1 className="text-midnight font-semibold text-3xl sm:text-5xl leading-14">Nuestra misión ha sido<br/> transformar el país</h1>
             </div>
           </div>
-          <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
-            <img alt="feature" className="object-cover object-center h-full w-full" src="/stock1.jpg"/>
-          </div>
-        </div>
-      </section>
-
-      <section className="text-gray-700 body-font">
-        <div className="container px-5 pb-24 mx-auto flex flex-wrap">
-          <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
-            <img alt="feature" className="object-contain object-center h-full w-full p-9" src="/years.png"/>
-          </div>
-          <div className="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
-            <div className="flex flex-col mb-10 lg:items-start items-center">
-              <div className="flex-grow">
-                <h2 className="text-blue-900 text-xl title-font font-semibold mb-3 leading-9">Nuestra misión ha sido 
-                  transformar el país 
-                  construyendo las obras que 
-                  generan oportunidades y 
-                  mejoran la calidad de vida, 
-                  donde la gente tiene sus raíces.</h2>
-              </div>
-              <div className="md:w-full my-6">
-                <div className="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
-                  <div className="flex items-center mb-3">
-                    <h2 className="text-blue-900 text-6xl title-font font-bold tracking-tighter">+RD$ 753</h2>
-                    <span className="text-blue-900 text-2xl title-font font-bold ms-4">MIL MILLONES</span>
-                  </div>
-                  <div className="flex-grow">
-                    <p className="text-base leading-7 text-blue-900 my-4 uppercase">
-                      en INVERSIÓNes que transforman
-                      el país 2020-2025 con el
-                      Plan Nacional de Inversión
-                      en infraestructura para el Desarrollo
-                  </p>
-                  </div>
-                </div>
-              </div>
-              <div className="md:w-full mb-6">
-                <div className="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
-                  <div className="flex items-center mb-3">
-                    <h2 className="text-blue-900 text-6xl title-font font-bold tracking-tighter">+RD$ 600</h2>
-                    <span className="text-blue-900 text-2xl title-font font-bold ms-4">MIL MILLONES</span>
-                  </div>
-                  <div className="flex-grow">
-                    <p className="text-base leading-7 text-blue-900 my-4 uppercase">
-                      Ejecutados
-                  </p>
-                  </div>
-                </div>
-              </div>
-              <div className="md:w-full mb-6">
-                <div className="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
-                  <div className="flex items-center mb-3">
-                    <h2 className="text-blue-900 text-6xl title-font font-bold tracking-tighter"> MILES DE OBRAS</h2>
-                    <span className="text-blue-900 text-2xl title-font font-bold ms-4">PRINCIPALES</span>
-                  </div>
-                  <div className="flex-grow">
-                    <p className="text-base leading-7 text-blue-900 my-4 uppercase">
-                      En vialidad, transporte, servicios 
-                        públicos, transformación urbana,
-                        inclusión social y modernización 
-                        del Estado.
-                  </p>
-                  </div>
-                </div>
-              </div>
+          <div className="flex-1 px-2 py-2 order-2 basis-0 shrink-1 self-auto">
+            <div className="p-4">
+              <p className="text-gray-500 text-md font-extralight leading-6 w-96">Construyendo las obras que generan oportunidades y mejoran la calidad de vida, donde la gente tiene sus raíces. Nuestro compromiso es crear infraestructura que impulse el desarrollo sostenible y la prosperidad de todos los dominicanos.</p>
             </div>
+          </div>
+        </div>
+          <div  className="box-border px-4 mx-auto border-solid sm:px-6 md:px-6 lg:px-0 container">
+              <div className="grid grid-cols-1 mt-4 leading-7 text-gray-900 border-0 border-gray-200 sm:mt-6 md:mt-8 gap-0 lg:grid-cols-3">
+                  {/* <!-- Card 1 --> */}
+                  <div className="relative w-full z-10 flex flex-col items-center max-w-md p-8 place-content-center h-full  mx-auto my-0 bg-white">
+                          <h2 className="text-midnight text-6xl font-extrabold">+RD$753</h2>
+                          <h3 className="text-red-500 text-lg title-font font-bold ms-4">MIL MILLONES</h3>
+                          <h4 className="text-midnight text-lg font-bold my-4 text-center">en INVERSIONES que transforman el país 2020-2025</h4>
+                          <h5 className="text-midnight text-md font-light text-center">Plan Nacional de Inversión en infraestructura para el Desarrollo</h5>
+                  </div>
+                  {/* <!-- Card 2 --> */}
+                  <div className="relative w-full z-10 flex flex-col items-center max-w-md p-8 place-content-center h-full  mx-auto my-0 bg-[#DCEFFF]">
+                          <h2 className="text-midnight text-6xl font-extrabold">+RD$753</h2>
+                          <h3 className="text-red-500 text-lg title-font font-bold ms-4">MIL MILLONES</h3>
+                          <h4 className="text-midnight text-lg font-bold my-4 text-center">Ejecutados</h4>
+                          <h5 className="text-midnight text-md font-light text-center">En proyectos estratégicos completados</h5>
+                  </div>
+                  {/* <!-- Card 3 --> */}
+                  <div className="relative w-full z-10 flex flex-col items-center max-w-md p-8 place-content-center h-full  mx-auto my-0 bg-midnight">
+                          <h2 className="text-white text-6xl font-extrabold text-center">MILES DE OBRAS</h2>
+                          <h3 className="text-red-500 text-lg title-font font-bold ms-4">MIL MILLONES</h3>
+                          <h4 className="text-white text-md font-medium my-4 text-center">En vialidad, transporte, servicios públicos, transformación urbana, inclusión social y modernización del Estado.</h4>
+                  </div>
+              </div>
+          </div>
+      </section>
 
-
+      <section className="w-full bg-white p-10 py-24" id="infra">
+        <div className="container mx-auto flex flex-row justify-center items-center content-center gap-5 p-5 m-5 w-full flex-wrap">
+            <div className="w-full mb-8 px-4 flex items-center">
+              <span className="border-b-4 w-16 border-red-500"></span>
+              <span className="flex-shrink-0 text-2xl text-gray-500 font-extralight pl-4">INFRAESTRUCTURA NACIONAL</span>
+            </div>
+          <div className="flex-1 px-2 py-2 order-1 basis-0  shrink-1 self-auto">
+            <div className="p-4">
+              <h1 className="text-midnight font-semibold text-3xl sm:text-5xl leading-14">Conoce las obras que<br/> transforman el país</h1>
+            </div>
+          </div>
+          <div className="flex-1 px-2 py-2 order-2 basis-0 shrink-1 self-auto">
+            <div className="p-4">
+              <p className="text-gray-500 text-md font-extralight leading-6 w-96">Desde carreteras que conectan comunidades hasta hospitales que salvan vidas, cada proyecto representa nuestro compromiso con el desarrollo integral de la República Dominicana.</p>
+            </div>
           </div>
         </div>
       </section>
 
 
-      
-      <section className="text-gray-700 body-font border-t border-gray-200">
-        <div className="container px-5 py-24 mx-auto">
-          <div className="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="inline-block w-8 h-8 text-gray-400 mb-8" viewBox="0 0 975.036 975.036">
-              <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
-            </svg>
-          </div>
-          <div className="flex flex-col text-center w-full mb-20">
-            <h1 className="text-6xl font-bold title-font text-blue-900 mb-4">CONSTRUYENDO LAS BASES DEL PAÍS QUE SEREMOS EN 2036</h1>
-            <h2 className="text-xl text-red-500 tracking-widest font-medium title-font mb-1"> La República Dominicana se encamina con decisión firme hacia el cumplimiento de la Meta 2036.</h2>
-          </div>
-          <div className="lg:w-3/4 w-full mx-auto text-center">
-            <p className="text-lg leading-7 text-blue-900 my-4">
-                    Miles de obras entregadas a lo largo y ancho de todo el país: carreteras, 
-hospitales, viviendas, escuelas, agua potable, conectividad, seguridad, 
-movilidad escolar. Cada una de estas obras representa la estructura, el 
-desarrollo, mejoras de la calidad de vida y el progreso social real, que 
-mejora la competitividad del país para un mercado global.
-                  </p>
-                  <p className="text-lg leading-7 text-blue-900 my-4">
-                     En apenas cinco años, el gobierno ha hecho más por preparar el país para 
-el futuro que lo logrado en los 16 años anteriores
-                  </p>
-                  <p className="text-lg font-medium leading-7 text-blue-900 my-4">
-                    No solo estamos construyendo obras. Estamos construyendo el futuro. 
-Y esa es la verdadera dimensión del esfuerzo de esta gestión.
-                  </p>
-                  
-            <span className="inline-block h-1 w-10 rounded bg-red-500 mt-8 mb-6"></span>
-          </div>
-        </div>
-      </section>
-
-
-      <div className="w-full m-auto my-16" id="home-client">
+      <div className="w-full m-auto" id="home-client">
         <HomeClient />
       </div> 
 
-      <footer className="bg-midnight lg:grid lg:grid-cols-6">
+      <footer id="contacto" className="bg-midnight lg:grid lg:grid-cols-6">
         <div className="px-4 py-24 sm:px-6 lg:col-span-4 lg:px-8 lg:col-start-2">
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
             <div>
@@ -259,7 +135,7 @@ Y esa es la verdadera dimensión del esfuerzo de esta gestión.
                   <img
                     src="/logopresidencia-white.svg"
                     alt="Gobierno logo"
-                    className="w-56 mb-2"
+                    className="w-64 mb-2"
                   />
                 </a>
               </p>
