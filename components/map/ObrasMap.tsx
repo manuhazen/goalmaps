@@ -22,24 +22,29 @@ const libraries: ("places" | "marker" | "geometry" | "maps")[] = [];
 
 const mapStyles = [
   {
-    featureType: "road",
-    elementType: "geometry",
-    stylers: [{ visibility: "on" }]
+    featureType: "road.arterial",
+    stylers: [{ visibility: "on" }],
   },
   {
-    featureType: "transit",
-    elementType: "labels.icon",
-    stylers: [{ visibility: "off" }]
+    featureType: "road.highway.controlled_access",
+    elementType: "labels",
+    stylers: [{ visibility: "off" }],
+  },
+  {
+    featureType: "road.local",
+    elementType: "labels",
+    stylers: [{ visibility: "off" }],
+  },
+  {
+    featureType: "transit.station",
+    elementType: "labels",
+    stylers: [{ visibility: "off" }],
   },
   {
     featureType: "poi",
-    elementType: "labels.text",
-    stylers: [{ visibility: "off" }]
+    elementType: "labels",
+    stylers: [{ visibility: "off" }],
   },
-  {
-    featureType: "poi",
-    stylers: [{ visibility: "off" }]
-  }
 ];
 
 function useObras() {
