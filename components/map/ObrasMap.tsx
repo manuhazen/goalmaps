@@ -158,7 +158,7 @@ export function ObrasMap() {
             {
               featureType: "landscape",
               elementType: "geometry.fill",
-              stylers: [{ color: "#E5E5E5" }],
+              stylers: [{ color: "#003876" }],
             },
           ],
         }}
