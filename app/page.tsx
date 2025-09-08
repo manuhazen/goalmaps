@@ -12,7 +12,7 @@ export default function Home() {
           />
         </div>
         <nav
-          className="fixed inset-x-0 top-0 z-30 mx-auto w-full max-w-screen-md border border-gray-100 bg-white/80 py-3 shadow backdrop-blur-lg md:top-6 md:rounded lg:max-w-screen-lg">
+          className=" inset-x-0 top-0 z-30 mx-auto w-full max-w-screen-md border border-gray-100 bg-white/80 py-3 shadow backdrop-blur-lg md:top-6 md:rounded lg:max-w-screen-lg">
           <div className="container mx-auto flex justify-between items-center px-8">
             <div  className="flex items-center">
               <a aria-current="page"  className="flex items-center">

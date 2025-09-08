@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ProvinciasCombobox } from "@/components/map/ProvinciasCombobox";
@@ -22,14 +22,29 @@ export function MapFilters({
   setFilters: (next: MapFiltersState) => void;
   total: number;
 }) {
-  const [collapsed, setCollapsed] = useState(false); // puede cerrarse, por defecto abierto
+  const [collapsed, setCollapsed] = useState(false);
+  const [isFixed, setIsFixed] = useState(false); 
+  const scrollThreshold = 2600; 
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.innerWidth >= 768) {
+        const currentScrollPos = window.scrollY;
+        setIsFixed(currentScrollPos > scrollThreshold);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrollThreshold]); 
 
   const clearFilters = () => setFilters({ provincias: [] });
 
   const FilterForm = (
     <div className="space-y-3">
-      {/* Estado filter removed as requested */}
-
       <div>
         <label className="text-sm font-medium mb-2 block">Provincias</label>
         <ProvinciasCombobox
@@ -50,7 +65,6 @@ export function MapFilters({
 
   return (
     <>
-      {/* Mobile: botón muy reducido que aparece cuando está colapsado */}
       {collapsed && (
         <div className="md:hidden absolute top-4 left-4 z-30">
           <Button
@@ -64,10 +78,10 @@ export function MapFilters({
         </div>
       )}
 
-      {/* Tarjeta flotante: en mobile se oculta totalmente cuando está colapsada; en desktop siempre visible (colapsa solo el contenido) */}
       <div
         className={cn(
-          "absolute top-4 left-4 z-20 w-[min(92vw,360px)]",
+          isFixed ? "fixed top-4 left-4" : "absolute top-4 left-4",
+          "z-20 w-[min(92vw,360px)]",
           collapsed ? "hidden md:block" : "block"
         )}
       >
@@ -75,7 +89,6 @@ export function MapFilters({
           <CardHeader className="pb-2 flex items-center justify-between">
             <CardTitle className="text-base">Filtros ({total})</CardTitle>
             <div className="flex items-center gap-2">
-              {/* Mobile: botón compacto para colapsar */}
               <div className="md:hidden">
                 <Button
                   size="icon"
@@ -86,7 +99,6 @@ export function MapFilters({
                   <SlidersHorizontal size={18} />
                 </Button>
               </div>
-              {/* Desktop: texto Mostrar/Ocultar */}
               <div className="hidden md:block">
                 <Button size="sm" variant="ghost" onClick={() => setCollapsed((v) => !v)}>
                   {collapsed ? "Mostrar" : "Ocultar"}

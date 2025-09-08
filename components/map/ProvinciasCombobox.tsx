@@ -49,7 +49,7 @@ export function ProvinciasCombobox({
               variant="outline"
               role="combobox"
               aria-expanded="false"
-              className="w-full justify-between"
+              className="w-full justify-between bg-[#F2F6F9]"
             >
               <span className="truncate mr-2">{textoBoton}</span>
               <ChevronsUpDown className="opacity-50" size={16} />
