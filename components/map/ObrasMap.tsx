@@ -126,27 +126,30 @@ export function ObrasMap() {
           fullscreenControl: true,
           // mapId: "c1d477847cd2c3e158a267dc",
           styles: [
-            {
-              featureType: "poi",
-              elementType: "labels",
-              stylers: [{ visibility: "off" }],
-            },
-            {
-              featureType: "transit",
-              elementType: "labels",
-              stylers: [{ visibility: "off" }],
-            },
-            {
-              featureType: "road.local",
-              elementType: "labels",
-              stylers: [{ visibility: "off" }],
-            },
-            {
-              featureType: "administrative",
-              elementType: "labels",
-              stylers: [{ visibility: "off" }],
-            },
-          ],
+    {
+      featureType: "administrative.country",
+      stylers: [{ visibility: "off" }],
+    },
+    {
+      featureType: "administrative.province",
+      stylers: [{ visibility: "off" }],
+    },
+    {
+      featureType: "landscape",
+      elementType: "geometry.fill",
+      stylers: [{ color: "#E5E5E5" }],
+    },
+    {
+      featureType: "administrative",
+      elementType: "geometry.stroke",
+      stylers: [{ visibility: "off" }],
+    },
+    {
+      featureType: "administrative.locality",
+      elementType: "labels",
+      stylers: [{ visibility: "off" }],
+    },
+  ],
         }}
       >
         {!isLoading && filteredObras && filteredObras.length > 0 && (
