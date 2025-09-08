@@ -161,8 +161,8 @@ export function ObrasMap() {
               stylers: [{ color: "#E5E5E5" }],
             },
             {
-              featureType: "administrative",
-              elementType: "geometry",
+              featureType: "road",
+              elementType: "labels.icon",
               stylers: [{ visibility: "off" }],
             },
           ],
