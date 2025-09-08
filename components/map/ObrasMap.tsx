@@ -132,7 +132,7 @@ export function ObrasMap() {
               west: -72.0075,
               east: -68.3221,
             },
-            strictBounds: true,
+            strictBounds: false,
           },
           styles: [
             {
@@ -158,7 +158,7 @@ export function ObrasMap() {
             {
               featureType: "landscape",
               elementType: "geometry.fill",
-              stylers: [{ color: "#003876" }],
+              stylers: [{ color: "#E5E5E5" }],
             },
           ],
         }}
