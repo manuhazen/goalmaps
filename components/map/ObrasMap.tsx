@@ -107,7 +107,29 @@ export function ObrasMap() {
           mapTypeControl: false,
           streetViewControl: false,
           fullscreenControl: true,
-          mapId: "c1d477847cd2c3e158a267dc",
+          // mapId: "c1d477847cd2c3e158a267dc",
+              styles: [
+                        {
+                          featureType: "poi",
+                          elementType: "labels",
+                          stylers: [{ visibility: "off" }],
+                        },
+                        {
+                          featureType: "transit",
+                          elementType: "labels",
+                          stylers: [{ visibility: "off" }],
+                        },
+                        {
+                          featureType: "road.local",
+                          elementType: "labels",
+                          stylers: [{ visibility: "off" }],
+                        },
+                        {
+                          featureType: "administrative",
+                          elementType: "labels",
+                          stylers: [{ visibility: "off" }],
+                        },
+                      ],
         }}
       >
         {!isLoading && filteredObras && filteredObras.length > 0 && (
@@ -139,4 +161,5 @@ export function ObrasMap() {
       />
     </div>
   );
+  
 }
