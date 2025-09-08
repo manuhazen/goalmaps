@@ -160,6 +160,11 @@ export function ObrasMap() {
               elementType: "geometry.fill",
               stylers: [{ color: "#E5E5E5" }],
             },
+            {
+              featureType: "administrative",
+              elementType: "geometry",
+              stylers: [{ visibility: "off" }],
+            },
           ],
         }}
       >
