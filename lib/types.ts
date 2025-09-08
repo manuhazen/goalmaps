@@ -11,6 +11,8 @@ export type Obra = {
   titulo: string;
   descripcion?: string;
   inversion: string;
+  region: string;
+  tipo_de_obra: string;
   ubicacion: Ubicacion;
   imagenes?: string[];
   videos?: string[];

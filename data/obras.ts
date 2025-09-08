@@ -8,6 +8,8 @@ export const obras: Obra[] = [
     descripcion:
       "Una inversión sin precedentes en infraestructura que está modernizando el Gran Santo Domingo, conectando a más de 400,000 personas, mejorando la calidad de vida y sentando las bases para una mayor competitividad del municipio.",
     inversion: "INVERSIÓN RD$ 6,698 MILLONES",
+    region: "Gran Santo Domingo",
+    tipo_de_obra: "Infraestructura Vial",
     ubicacion: {
       provincia: "Santo Domingo",
       municipio: "Los Alcarrizos",
@@ -23,6 +25,8 @@ export const obras: Obra[] = [
     descripcion:
       "Ampliación y remodelación de dos a ocho carriles de la avenida Coronel Rafael Tomás Fernández Domínguez (San Isidro).",
     inversion: "INVERSIÓN RD$ 2,400 MILLONES",
+    region: "Gran Santo Domingo",
+    tipo_de_obra: "Infraestructura Vial",
     ubicacion: {
       provincia: "Santo Domingo",
       municipio: "Santo Domingo Este",
@@ -37,6 +41,8 @@ export const obras: Obra[] = [
     titulo: "Ciudad Judicial Palacio de Justicia",
     descripcion: "Construcción de la nueva sede judicial.",
     inversion: "INVERSIÓN RD$ 2,110 MILLONES",
+    region: "Gran Santo Domingo",
+    tipo_de_obra: "Otros",
     ubicacion: {
       provincia: "Santo Domingo",
       municipio: "Santo Domingo Este",
@@ -48,10 +54,12 @@ export const obras: Obra[] = [
   },
   {
     id: "obra-4",
-    titulo: "Parque del Este y Centro Olímpico Juan Pablo Duarte",
+    titulo: "Parque del Este",
     descripcion:
       "Remodelación de las instalaciones deportivas que serán utilizadas para los XXV Juegos Centroamericanos y del Caribe, Santo Domingo 2026.",
     inversion: "INVERSIÓN RD$ 3,700 MILLONES",
+    region: "Gran Santo Domingo",
+    tipo_de_obra: "Deportivos",
     ubicacion: {
       provincia: "Santo Domingo",
       municipio: "Santo Domingo Este",
@@ -67,6 +75,8 @@ export const obras: Obra[] = [
     descripcion:
       "Una inversión sin precedentes en infraestructura que está modernizando la metrópolis, mejorando la calidad de vida y sentando las bases para una mayor competitividad. Movilidad urbana integrada. Extensión Línea 2 del Metro (2C) llevará el sistema de transporte masivo hasta Los Alcarrizos, integrando a sus habitantes a todo el sistema de transporte masivo de la provincia.",
     inversion: "INVERSIÓN RD$ 29,850 MILLONES",
+    region: "Gran Santo Domingo",
+    tipo_de_obra: "Infraestructura Vial",
     ubicacion: {
       provincia: "Santo Domingo",
       municipio: "Los Alcarrizos",
@@ -82,6 +92,8 @@ export const obras: Obra[] = [
     descripcion:
       "Construcción del primer Monorriel del Caribe con 13km de longitud.",
     inversion: "INVERSIÓN RD$ 33,000 MILLONES",
+    region: "Región Norte",
+    tipo_de_obra: "Infraestructura Vial",
     ubicacion: {
       provincia: "Santiago",
       municipio: "Santiago de los Caballeros",
@@ -97,6 +109,8 @@ export const obras: Obra[] = [
     descripcion:
       "Sistema de 6.5 km integrado al Monorriel para transformar la movilidad urbana.",
     inversion: "INVERSIÓN RD$ 6,500 MILLONES",
+    region: "Región Norte",
+    tipo_de_obra: "Infraestructura Vial",
     ubicacion: {
       provincia: "Santiago",
       municipio: "Santiago de los Caballeros",
@@ -112,6 +126,8 @@ export const obras: Obra[] = [
     descripcion:
       "Para conectar Tamboril con Cienfuegos y mantenimiento a esta importante vía.",
     inversion: "INVERSIÓN RD$ 2,126 MILLONES",
+    region: "Región Norte",
+    tipo_de_obra: "Infraestructura Vial",
     ubicacion: {
       provincia: "Santiago",
       municipio: "Santiago de los Caballeros",
@@ -127,6 +143,8 @@ export const obras: Obra[] = [
     descripcion:
       "Arroyo Gurabo: estamos llevando agua potable, saneamiento y espacios de recreación sana para todas las comunidades que habitan en la zona.",
     inversion: "INVERSIÓN RD$ 1,392 MILLONES",
+    region: "Región Norte",
+    tipo_de_obra: "Hídricos",
     ubicacion: {
       provincia: "Santiago",
       municipio: "Santiago de los Caballeros",
@@ -142,6 +160,8 @@ export const obras: Obra[] = [
     descripcion:
       "Mi Vivienda Hato del Yaque beneficia a más de 4 mil personas que vivían en condiciones de vulnerabilidad a las orillas de cañadas y ríos de Arroyo Gurabo.",
     inversion: "INVERSIÓN RD$ 2,700 MILLONES",
+    region: "Región Norte",
+    tipo_de_obra: "Otros",
     ubicacion: {
       provincia: "Santiago",
       municipio: "Santiago de los Caballeros",
