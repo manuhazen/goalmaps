@@ -20,33 +20,6 @@ const mapContainerStyle = { width: "100%", height: "100%" } as const;
 
 const libraries: ("places" | "marker" | "geometry" | "maps")[] = [];
 
-const mapStyles = [
-  {
-    featureType: "road.arterial",
-    stylers: [{ visibility: "on" }],
-  },
-  {
-    featureType: "road.highway.controlled_access",
-    elementType: "labels",
-    stylers: [{ visibility: "off" }],
-  },
-  {
-    featureType: "road.local",
-    elementType: "labels",
-    stylers: [{ visibility: "off" }],
-  },
-  {
-    featureType: "transit.station",
-    elementType: "labels",
-    stylers: [{ visibility: "off" }],
-  },
-  {
-    featureType: "poi",
-    elementType: "labels",
-    stylers: [{ visibility: "off" }],
-  },
-];
-
 function useObras() {
   return useQuery({
     queryKey: ["obras"],
@@ -124,7 +97,7 @@ export function ObrasMap() {
         />
       )}
       <GoogleMap
-        onLoad={mapOnLoad}
+        // onLoad={mapOnLoad}
         mapContainerStyle={mapContainerStyle}
         center={center}
         zoom={9}
@@ -134,7 +107,7 @@ export function ObrasMap() {
           mapTypeControl: false,
           streetViewControl: false,
           fullscreenControl: true,
-          styles: mapStyles,
+          mapId: "c1d477847cd2c3e158a267dc",
         }}
       >
         {!isLoading && filteredObras && filteredObras.length > 0 && (
