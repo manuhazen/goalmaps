@@ -6,12 +6,11 @@ import {
   useLoadScript,
   GoogleMarkerClusterer,
 } from "@react-google-maps/api";
-import { useMemo, useState, useCallback } from "react";
+import { useMemo, useState, useCallback, useRef } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { obras as obrasLocales } from "@/data/obras";
 import { Obra } from "@/lib/types";
 import { ObraDrawer } from "@/components/obra/ObraDrawer";
-import { createRDBounds } from "@/lib/rd-bounds";
 import { Skeleton } from "@/components/ui/skeleton";
 import { MapFilters, MapFiltersState } from "@/components/map/MapFilters";
 import { ClusterRenderer } from "@/lib/cluster-renderer";
@@ -24,7 +23,6 @@ function useObras() {
   return useQuery({
     queryKey: ["obras"],
     queryFn: async (): Promise<Obra[]> => {
-      // Simula fetch local. Puedes evolucionar a Supabase aquí.
       return obrasLocales;
     },
     staleTime: 1000 * 60,
@@ -42,19 +40,29 @@ export function ObrasMap() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [filters, setFilters] = useState<MapFiltersState>({ provincias: [] });
 
+  const mapRef = useRef<google.maps.Map | null>(null);
+
+  const center = useMemo(() => ({ lat: 18.7357, lng: -70.1627 }), []);
+  const initialZoom = 9;
+
   const onMarkerClick = useCallback((obra: Obra) => {
     setSelected(obra);
     setDrawerOpen(true);
   }, []);
 
   const mapOnLoad = useCallback((map: google.maps.Map) => {
-    const g = (window as any).google as typeof window.google;
-    if (!g) return;
-    const bounds = createRDBounds(g);
-    map.fitBounds(bounds);
-  }, []);
+    mapRef.current = map;
+    map.setCenter(center);
+    map.setZoom(initialZoom);
+  }, [center]);
 
-  const center = useMemo(() => ({ lat: 18.7357, lng: -70.1627 }), []);
+  const handleResetView = useCallback(() => {
+    if (mapRef.current) {
+      mapRef.current.setCenter(center);
+      mapRef.current.setZoom(initialZoom);
+    }
+  }, [center]);
+
   const provincias = useMemo(() => {
     if (!obras) return [] as string[];
     const set = new Set<string>();
@@ -96,11 +104,20 @@ export function ObrasMap() {
           total={filteredObras.length}
         />
       )}
+
+      {/* Botón Reset */}
+      <button
+        onClick={handleResetView}
+        className="absolute top-4 right-20 z-10 bg-white shadow-md px-3 py-1 rounded text-sm font-medium hover:bg-gray-100"
+      >
+        Ajustar Mapa
+      </button>
+
       <GoogleMap
-        // onLoad={mapOnLoad}
+        onLoad={mapOnLoad}
         mapContainerStyle={mapContainerStyle}
         center={center}
-        zoom={9}
+        zoom={initialZoom}
         options={{
           disableDefaultUI: false,
           clickableIcons: false,
@@ -108,28 +125,28 @@ export function ObrasMap() {
           streetViewControl: false,
           fullscreenControl: true,
           // mapId: "c1d477847cd2c3e158a267dc",
-              styles: [
-                        {
-                          featureType: "poi",
-                          elementType: "labels",
-                          stylers: [{ visibility: "off" }],
-                        },
-                        {
-                          featureType: "transit",
-                          elementType: "labels",
-                          stylers: [{ visibility: "off" }],
-                        },
-                        {
-                          featureType: "road.local",
-                          elementType: "labels",
-                          stylers: [{ visibility: "off" }],
-                        },
-                        {
-                          featureType: "administrative",
-                          elementType: "labels",
-                          stylers: [{ visibility: "off" }],
-                        },
-                      ],
+          styles: [
+            {
+              featureType: "poi",
+              elementType: "labels",
+              stylers: [{ visibility: "off" }],
+            },
+            {
+              featureType: "transit",
+              elementType: "labels",
+              stylers: [{ visibility: "off" }],
+            },
+            {
+              featureType: "road.local",
+              elementType: "labels",
+              stylers: [{ visibility: "off" }],
+            },
+            {
+              featureType: "administrative",
+              elementType: "labels",
+              stylers: [{ visibility: "off" }],
+            },
+          ],
         }}
       >
         {!isLoading && filteredObras && filteredObras.length > 0 && (
@@ -161,5 +178,4 @@ export function ObrasMap() {
       />
     </div>
   );
-  
 }
