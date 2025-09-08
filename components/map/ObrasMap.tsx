@@ -125,31 +125,42 @@ export function ObrasMap() {
           streetViewControl: false,
           fullscreenControl: true,
           // mapId: "c1d477847cd2c3e158a267dc",
+          restriction: {
+            latLngBounds: {
+              north: 20.08782,
+              south: 17.47053,
+              west: -72.0075,
+              east: -68.3221,
+            },
+            strictBounds: true,
+          },
           styles: [
-    {
-      featureType: "administrative.country",
-      stylers: [{ visibility: "off" }],
-    },
-    {
-      featureType: "administrative.province",
-      stylers: [{ visibility: "off" }],
-    },
-    {
-      featureType: "landscape",
-      elementType: "geometry.fill",
-      stylers: [{ color: "#E5E5E5" }],
-    },
-    {
-      featureType: "administrative",
-      elementType: "geometry.stroke",
-      stylers: [{ visibility: "off" }],
-    },
-    {
-      featureType: "administrative.locality",
-      elementType: "labels",
-      stylers: [{ visibility: "off" }],
-    },
-  ],
+            {
+              featureType: "poi",
+              elementType: "labels",
+              stylers: [{ visibility: "off" }],
+            },
+            {
+              featureType: "transit",
+              elementType: "labels",
+              stylers: [{ visibility: "off" }],
+            },
+            {
+              featureType: "road.local",
+              elementType: "labels",
+              stylers: [{ visibility: "off" }],
+            },
+            {
+              featureType: "administrative",
+              elementType: "labels",
+              stylers: [{ visibility: "off" }],
+            },
+            {
+              featureType: "landscape",
+              elementType: "geometry.fill",
+              stylers: [{ color: "#E5E5E5" }],
+            },
+          ],
         }}
       >
         {!isLoading && filteredObras && filteredObras.length > 0 && (
