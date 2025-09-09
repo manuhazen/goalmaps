@@ -38,7 +38,11 @@ export function ObrasMap() {
   const { data: obras, isLoading } = useObras();
   const [selected, setSelected] = useState<Obra | null>(null);
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const [filters, setFilters] = useState<MapFiltersState>({ provincias: [] });
+  const [filters, setFilters] = useState<MapFiltersState>({
+    provincias: [],
+    regiones: [],
+    tiposDeObra: [],
+  });
 
   const mapRef = useRef<google.maps.Map | null>(null);
 
@@ -48,6 +52,28 @@ export function ObrasMap() {
   const onMarkerClick = useCallback((obra: Obra) => {
     setSelected(obra);
     setDrawerOpen(true);
+  }, []);
+
+  const onClusterClick = useCallback((event: any) => {
+    // Override default fitBounds to avoid conflict with map restriction.
+    try {
+      event?.stop?.();
+    } catch {}
+    const map = mapRef.current;
+    if (!map) return;
+    let latLng: google.maps.LatLng | google.maps.LatLngLiteral | null =
+      event?.latLng ?? null;
+    if (!latLng && event?.cluster?.position) latLng = event.cluster.position;
+    if (!latLng && Array.isArray(event?.markers) && event.markers.length > 0) {
+      const pos = event.markers[0].getPosition?.();
+      if (pos) latLng = pos;
+    }
+    if (latLng) {
+      // Pan to the cluster center and zoom in a bit.
+      map.panTo(latLng as any);
+      const currentZoom = map.getZoom?.() ?? initialZoom;
+      map.setZoom(Math.min((currentZoom ?? initialZoom) + 2, 18));
+    }
   }, []);
 
   const mapOnLoad = useCallback((map: google.maps.Map) => {
@@ -70,13 +96,32 @@ export function ObrasMap() {
     return Array.from(set).sort((a, b) => a.localeCompare(b));
   }, [obras]);
 
+  const regiones = useMemo(() => {
+    if (!obras) return [] as string[];
+    const set = new Set<string>();
+    obras.forEach((o) => set.add(o.region));
+    return Array.from(set).sort((a, b) => a.localeCompare(b));
+  }, [obras]);
+
+  const tiposDeObra = useMemo(() => {
+    if (!obras) return [] as string[];
+    const set = new Set<string>();
+    obras.forEach((o) => set.add(o.tipo_de_obra));
+    return Array.from(set).sort((a, b) => a.localeCompare(b));
+  }, [obras]);
+
   const filteredObras = useMemo(() => {
     if (!obras) return [] as Obra[];
     return obras.filter((o) => {
       const matchProvincia =
         filters.provincias.length === 0 ||
         filters.provincias.includes(o.ubicacion.provincia);
-      return matchProvincia;
+      const matchRegion =
+        filters.regiones.length === 0 || filters.regiones.includes(o.region);
+      const matchTipo =
+        filters.tiposDeObra.length === 0 ||
+        filters.tiposDeObra.includes(o.tipo_de_obra);
+      return matchProvincia && matchRegion && matchTipo;
     });
   }, [obras, filters]);
 
@@ -99,6 +144,8 @@ export function ObrasMap() {
       {obras && (
         <MapFilters
           provincias={provincias}
+          regiones={regiones}
+          tiposDeObra={tiposDeObra}
           filters={filters}
           setFilters={setFilters}
           total={filteredObras.length}
@@ -116,8 +163,6 @@ export function ObrasMap() {
       <GoogleMap
         onLoad={mapOnLoad}
         mapContainerStyle={mapContainerStyle}
-        center={center}
-        zoom={initialZoom}
         options={{
           disableDefaultUI: false,
           clickableIcons: false,
@@ -169,7 +214,9 @@ export function ObrasMap() {
         }}
       >
         {!isLoading && filteredObras && filteredObras.length > 0 && (
-          <GoogleMarkerClusterer options={{ renderer: ClusterRenderer as any }}>
+          <GoogleMarkerClusterer
+            options={{ renderer: ClusterRenderer as any, onClusterClick }}
+          >
             {(clusterer) => (
               <>
                 {filteredObras.map((obra) => (

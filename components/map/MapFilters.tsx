@@ -9,15 +9,21 @@ import { SlidersHorizontal } from "lucide-react";
 
 export type MapFiltersState = {
   provincias: string[];
+  regiones: string[];
+  tiposDeObra: string[];
 };
 
 export function MapFilters({
   provincias,
+  regiones,
+  tiposDeObra,
   filters,
   setFilters,
   total,
 }: {
   provincias: string[];
+  regiones: string[];
+  tiposDeObra: string[];
   filters: MapFiltersState;
   setFilters: (next: MapFiltersState) => void;
   total: number;
@@ -41,7 +47,8 @@ export function MapFilters({
     };
   }, [scrollThreshold]); 
 
-  const clearFilters = () => setFilters({ provincias: [] });
+  const clearFilters = () =>
+    setFilters({ provincias: [], regiones: [], tiposDeObra: [] });
 
   const FilterForm = (
     <div className="space-y-3">
@@ -51,6 +58,26 @@ export function MapFilters({
           opciones={provincias}
           value={filters.provincias}
           onChange={(next) => setFilters({ ...filters, provincias: next })}
+        />
+      </div>
+
+      <div>
+        <label className="text-sm font-medium mb-2 block">Regiones</label>
+        <ProvinciasCombobox
+          opciones={regiones}
+          value={filters.regiones}
+          onChange={(next) => setFilters({ ...filters, regiones: next })}
+          label="Regiones"
+        />
+      </div>
+
+      <div>
+        <label className="text-sm font-medium mb-2 block">Tipos de obra</label>
+        <ProvinciasCombobox
+          opciones={tiposDeObra}
+          value={filters.tiposDeObra}
+          onChange={(next) => setFilters({ ...filters, tiposDeObra: next })}
+          label="Tipos de obra"
         />
       </div>
 
