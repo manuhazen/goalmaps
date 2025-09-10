@@ -217,7 +217,7 @@ export const obras: Obra[] = [
       lat: 18.51757571,
       lng: -70.00992377
     },
-    imagenes: ["https://drive.google.com/file/d/1VrqCunZcHq_uAQmJkdvO8wijvzlTmvZy/view?usp=drive_link"]
+    imagenes: ["https://drive.google.com/uc?export=view&id=1VrqCunZcHq_uAQmJkdvO8wijvzlTmvZy"]
   },
   {
     id: "obra-15",
