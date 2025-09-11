@@ -1436,7 +1436,7 @@ export const obras: Obra[] = [
     titulo: "MONORRIEL SANTIAGO DE LOS CABALLEROS",
     descripcion: "Construcción del primer Monorriel del Caribe con 15 km EN DESARROLLO",
     inversion: "INVERSIÓN RD$ 33,000 MILLONES",
-    region: "Santiago",
+    region: "Región Norte",
     tipo_de_obra: "Infraestructura Vial",
     ubicacion: {
       provincia: "Santiago",
@@ -1454,7 +1454,7 @@ export const obras: Obra[] = [
     titulo: "TELEFÉRICO SANTIAGO DE LOS CABALLEROS",
     descripcion: "Sistema de 4 km integrado al Monorriel para transformar la movilidad urbana",
     inversion: "INVERSIÓN RD$ 6,544 MILLONES",
-    region: "Santiago",
+    region: "Región Norte",
     tipo_de_obra: "Infraestructura Vial",
     ubicacion: {
       provincia: "Santiago",
@@ -1472,7 +1472,7 @@ export const obras: Obra[] = [
     titulo: "MI VIVIENDA HATO DEL YAQUE SANTIAGO",
     descripcion: "Mi Vivienda Hato del Yaque beneficia a más de 4 mil personas que vivían en condiciones de vulnerabilidad a las orillas de cañadas y ríos de Arroyo Gurabo.",
     inversion: "INVERSIÓN RD$ 2,796 MILLONES",
-    region: "Santiago",
+    region: "Región Norte",
     tipo_de_obra: "Vivienda",
     ubicacion: {
       provincia: "Santiago",
@@ -1490,7 +1490,7 @@ export const obras: Obra[] = [
     titulo: "ENTRADA DE SANTIAGO AUT. DUARTE",
     descripcion: "Modernización del tramo desde el aeropuerto hasta la fortaleza.",
     inversion: "INVERSIÓN RD$ 1,108.6 MILLONES",
-    region: "Santiago",
+    region: "Región Norte",
     tipo_de_obra: "Infraestructura Vial",
     ubicacion: {
       provincia: "Santiago",
@@ -1508,7 +1508,7 @@ export const obras: Obra[] = [
     titulo: "TERMINACIÓN Y REHABILITACIÓN CIRCUNVALACIÓN NORTE",
     descripcion: "INFRAESTRUCTURA SOCIAL Y DE SERVICIOS Para conectar Tamboril con Cienfuegos y mantenimiento a esta importante vía.",
     inversion: "INVERSIÓN RD$ 1,200 MILLONES",
-    region: "Santiago",
+    region: "Región Norte",
     tipo_de_obra: "Infraestructura Vial",
     ubicacion: {
       provincia: "Santiago",
@@ -1526,7 +1526,7 @@ export const obras: Obra[] = [
     titulo: "CONSTRUCCIÓN DE LA CARRETERA LA CUMBRE -HERMANAS MIRABAL-TAMBORIL -EL GUAZUMAL",
     descripcion: "",
     inversion: "INVERSIÓN RD$ 858 MILLONES",
-    region: "Santiago",
+    region: "Región Norte",
     tipo_de_obra: "Infraestructura Vial",
     ubicacion: {
       provincia: "Santiago",
@@ -1544,7 +1544,7 @@ export const obras: Obra[] = [
     titulo: "CONSTRUCCIÓN CARRETERA JUAN VERA-HIGO DE AGUA-PALO ALTO",
     descripcion: "INFRAESTRUCTURA SOCIAL Y DE SERVICIOS",
     inversion: "INVERSIÓN RD$ 251 MILLONES",
-    region: "Santiago",
+    region: "Región Norte",
     tipo_de_obra: "Infraestructura Vial",
     ubicacion: {
       provincia: "Santiago",
@@ -1562,7 +1562,7 @@ export const obras: Obra[] = [
     titulo: "SANEAMIENTO Y RECUPERACIÓN ARROYO GURABO",
     descripcion: "INFRAESTRUCTURA SOCIAL Y DE SERVICIOS",
     inversion: "INVERSIÓN RD$ 1,500 MILLONES",
-    region: "Santiago",
+    region: "Región Norte",
     tipo_de_obra: "Desarrollo Urbano",
     ubicacion: {
       provincia: "Santiago",
@@ -1580,7 +1580,7 @@ export const obras: Obra[] = [
     titulo: "RECUPERACIÓN DEL CENTRO HISTÓRICO Santiago.",
     descripcion: "",
     inversion: "INVERSIÓN RD$ 1,200 MILLONES",
-    region: "Santiago",
+    region: "Región Norte",
     tipo_de_obra: "Desarrollo Urbano",
     ubicacion: {
       provincia: "Santiago",
@@ -1598,7 +1598,7 @@ export const obras: Obra[] = [
     titulo: "HOSPITAL SAN JOSÉ DE LAS MATAS SANTIAGO",
     descripcion: "El hospital municipal dispondrá áreas de emergencia, hospitalización, imágenes, inmunizaciones, un laboratorio y una farmacia.",
     inversion: "INVERSIÓN RD$ 1,253 MILLONES",
-    region: "Santiago",
+    region: "Región Norte",
     tipo_de_obra: "Desarrollo Urbano",
     ubicacion: {
       provincia: "Santiago",
@@ -1616,7 +1616,7 @@ export const obras: Obra[] = [
     titulo: "CONSTRUCCIÓN MURO DE GAVIÓNES CANAL MONSIEUR BOGAERT",
     descripcion: "",
     inversion: "INVERSIÓN RD$ 110 MILLONES",
-    region: "Santiago",
+    region: "Región Norte",
     tipo_de_obra: "Desarrollo Urbano",
     ubicacion: {
       provincia: "Santiago",
@@ -1634,7 +1634,7 @@ export const obras: Obra[] = [
     titulo: "CIRCUNVALACIÓN NAVARRETE, SANTIAGO EN DESARROLLO",
     descripcion: "",
     inversion: "",
-    region: "Santiago",
+    region: "Región Norte",
     tipo_de_obra: "Infraestructura Vial",
     ubicacion: {
       provincia: "Santiago",
@@ -1652,7 +1652,7 @@ export const obras: Obra[] = [
     titulo: "MI VIVIENDA LOS SALADOS",
     descripcion: "",
     inversion: "INVERSIÓN RD$ 1,505 MILLONES",
-    region: "Santiago",
+    region: "Región Norte",
     tipo_de_obra: "Vivienda",
     ubicacion: {
       provincia: "Santiago",
@@ -1670,7 +1670,7 @@ export const obras: Obra[] = [
     titulo: "MI VIVIENDA LA BARRANQUITA",
     descripcion: "",
     inversion: "INVERSIÓN RD$ 313 MILLONES",
-    region: "Santiago",
+    region: "Región Norte",
     tipo_de_obra: "Vivienda",
     ubicacion: {
       provincia: "Santiago",
@@ -1688,7 +1688,7 @@ export const obras: Obra[] = [
     titulo: "REHABILITACIÓN DE CARRETERA JOAQUÍN BALAGUER SANTIAGO - NAVARRETE",
     descripcion: "",
     inversion: "INVERSIÓN RD$ 496.6 MILLONES",
-    region: "Santiago",
+    region: "Región Norte",
     tipo_de_obra: "Infraestructura Vial",
     ubicacion: {
       provincia: "Santiago",
@@ -1706,7 +1706,7 @@ export const obras: Obra[] = [
     titulo: "Modernicación AVENIDA LAS CARRERAS ESQ. 30 DE MARZO",
     descripcion: "",
     inversion: "INVERSIÓN RD$ 480 MILLONES",
-    region: "Santiago",
+    region: "Región Norte",
     tipo_de_obra: "Infraestructura Vial",
     ubicacion: {
       provincia: "Santiago",
@@ -1724,7 +1724,7 @@ export const obras: Obra[] = [
     titulo: "CONSTRUCCIÓN Hospital Municipal San José de las Matas",
     descripcion: "",
     inversion: "INVERSIÓN RD$ 1,253 MILLONES",
-    region: "Santiago",
+    region: "Región Norte",
     tipo_de_obra: "Salud",
     ubicacion: {
       provincia: "Santiago",
@@ -1742,7 +1742,7 @@ export const obras: Obra[] = [
     titulo: "remozamiento y ampliación de emergencia Hospital municipal de tamboril Dr. Jorge Armando Martínez",
     descripcion: "",
     inversion: "INVERSIÓN RD$ 143.6 MILLONES",
-    region: "Santiago",
+    region: "Región Norte",
     tipo_de_obra: "Salud",
     ubicacion: {
       provincia: "Santiago",
@@ -1760,7 +1760,7 @@ export const obras: Obra[] = [
     titulo: "RECONSTRUCCIÓN CARRETERA SAJOMA-PEDREGAL SANTIAGO",
     descripcion: "Esta importante obra forma parte de un conjunto de intervenciones viales que incluyeron también calles internas de los sectores 3 Cruces y La Mejía",
     inversion: "INVERSIÓN RD$ +397 MILLONES",
-    region: "Santiago",
+    region: "Región Norte",
     tipo_de_obra: "Infraestructura Vial",
     ubicacion: {
       provincia: "Santiago",
@@ -1778,7 +1778,7 @@ export const obras: Obra[] = [
     titulo: "CARRETERA BAO LA GALETA",
     descripcion: "6.98 km de carretera en las comunidades Bao, La Galeta, La Hoya, La Virgen y El Cuartel.",
     inversion: "INVERSIÓN RD$ 242 MILLONES",
-    region: "Santiago",
+    region: "Región Norte",
     tipo_de_obra: "Infraestructura Vial",
     ubicacion: {
       provincia: "Santiago",
@@ -1796,7 +1796,7 @@ export const obras: Obra[] = [
     titulo: "CENTRO EDUCATIVO CENTRO EDUCATIVO JOSÉ RAFAEL ABINADER Hato del Yaque, Santiago",
     descripcion: "",
     inversion: "INVERSIÓN RD$ 123.6 MILLONES",
-    region: "Santiago",
+    region: "Región Norte",
     tipo_de_obra: "Educación",
     ubicacion: {
       provincia: "Santiago",
@@ -1814,7 +1814,7 @@ export const obras: Obra[] = [
     titulo: "AMPLICACIÓN CENTRO EDUCATIVO JOSÉ RAÚL CABRERA UREÑA EL PAPAYO, SANTIAGO",
     descripcion: "La escuela de nivel secundario cuenta con 26 aulas que benefician a 770 niños y niñas",
     inversion: "INVERSIÓN RD$ 156.5 MILLONES",
-    region: "Santiago",
+    region: "Región Norte",
     tipo_de_obra: "Educación",
     ubicacion: {
       provincia: "Santiago",
@@ -1832,7 +1832,7 @@ export const obras: Obra[] = [
     titulo: "CENTRO EDUCATIVO MARÍA SECUNDINA TORRES SIRÍ MONTE ADENTRO, SANTIAGO",
     descripcion: "Cuenta con 24 aulas y tiene capacidad para 830 estudiantes.",
     inversion: "INVERSIÓN RD$ 164 MILLONES",
-    region: "Santiago",
+    region: "Región Norte",
     tipo_de_obra: "Educación",
     ubicacion: {
       provincia: "Santiago",
@@ -1850,7 +1850,7 @@ export const obras: Obra[] = [
     titulo: "CENTRO PERIFÉRICO LA JOYA",
     descripcion: "El nuevo Centro Periférico La Joya, en Santiago de los Caballeros. Un centro que acerca las atenciones de salud con calidad a la comunidad.",
     inversion: "",
-    region: "Santiago",
+    region: "Región Norte",
     tipo_de_obra: "Salud",
     ubicacion: {
       provincia: "Santiago",
@@ -1868,7 +1868,7 @@ export const obras: Obra[] = [
     titulo: "HOSPITAL JOSÉ MARÍA CABRAL Y BÁEZ",
     descripcion: "Remozamiento de áreas, equipos, adecuación del bloque quirúrgico, esterilización y área de emergencia.",
     inversion: "INVERSIÓN RD$ 2800 MILLONES",
-    region: "Santiago",
+    region: "Región Norte",
     tipo_de_obra: "Salud",
     ubicacion: {
       provincia: "Santiago",
@@ -1886,7 +1886,7 @@ export const obras: Obra[] = [
     titulo: "DESTACAMENTO POLICÍA NACIONAL MUNICIPIO PUÑAL SANTIAGO",
     descripcion: "",
     inversion: "",
-    region: "Santiago",
+    region: "Región Norte",
     tipo_de_obra: "Seguridad",
     ubicacion: {
       provincia: "Santiago",
@@ -1904,7 +1904,7 @@ export const obras: Obra[] = [
     titulo: "PUENTE PUÑAL",
     descripcion: "",
     inversion: "",
-    region: "Santiago",
+    region: "Región Norte",
     tipo_de_obra: "Infraestructura Vial",
     ubicacion: {
       provincia: "Santiago",
@@ -1922,7 +1922,7 @@ export const obras: Obra[] = [
     titulo: "AMPLIACIÓN ACUEDUCTO NAVARRETE",
     descripcion: "En desarrollo",
     inversion: "INVERSIÓN RD$ 1000 MILLONES",
-    region: "Santiago",
+    region: "Región Norte",
     tipo_de_obra: "Infraestructura Vial",
     ubicacion: {
       provincia: "Santiago",
@@ -1940,7 +1940,7 @@ export const obras: Obra[] = [
     titulo: "Carretera GUAYABAL DE SANTIAGO",
     descripcion: "Asfaltado en el distrito municipal de Guayabal, municipio de Puñal, en Santiago, varias calles del centro del poblado.",
     inversion: "INVERSIÓN RD$ 116.30 MILLONES",
-    region: "Santiago",
+    region: "Región Norte",
     tipo_de_obra: "Infraestructura Vial",
     ubicacion: {
       provincia: "Santiago",
@@ -1958,7 +1958,7 @@ export const obras: Obra[] = [
     titulo: "PROYECTO CEDI-MUJER",
     descripcion: "El proyecto Ciudad Mujer ejecutado por el Gabinete de Política Social ha materializado el diseño, la construcción, equipamiento y puesta en operación de dos Centros de Desarrollo Integral para la Mujer (CEDI-Mujer) en la provincia de Santiago con el objetivo de ofrecer, bajo un mismo techo, servicios integrales de atención, protección y empoderamiento de la mujer.",
     inversion: "",
-    region: "Santiago",
+    region: "Región Norte",
     tipo_de_obra: "Salud",
     ubicacion: {
       provincia: "Santiago",
@@ -1976,7 +1976,7 @@ export const obras: Obra[] = [
     titulo: "Estación transferencia Tamboril",
     descripcion: "Transferencia Residuos sólidos",
     inversion: "",
-    region: "Santiago",
+    region: "Región Norte",
     tipo_de_obra: "Desarrollo Urbano",
     ubicacion: {
       provincia: "Santiago",
