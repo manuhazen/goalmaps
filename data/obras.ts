@@ -1431,4 +1431,562 @@ export const obras: Obra[] = [
       "https://i.imgur.com/irneFUh.png"
     ]
   },
+    {
+    id: "obra-82",
+    titulo: "MONORRIEL SANTIAGO DE LOS CABALLEROS",
+    descripcion: "Construcción del primer Monorriel del Caribe con 15 km EN DESARROLLO",
+    inversion: "INVERSIÓN RD$ 33,000 MILLONES",
+    region: "Santiago",
+    tipo_de_obra: "Infraestructura Vial",
+    ubicacion: {
+      provincia: "Santiago",
+      municipio: "",
+      sector: "",
+      lat: 19.46211695,
+      lng: -70.70706248
+    },
+    imagenes: [
+      "https://i.imgur.com/oSHB12c.jpeg"
+    ]
+  },
+  {
+    id: "obra-83",
+    titulo: "TELEFÉRICO SANTIAGO DE LOS CABALLEROS",
+    descripcion: "Sistema de 4 km integrado al Monorriel para transformar la movilidad urbana",
+    inversion: "INVERSIÓN RD$ 6,544 MILLONES",
+    region: "Santiago",
+    tipo_de_obra: "Infraestructura Vial",
+    ubicacion: {
+      provincia: "Santiago",
+      municipio: "",
+      sector: "",
+      lat: 19.44961205,
+      lng: -70.70787105
+    },
+    imagenes: [
+      "https://i.imgur.com/EppuNGx.jpeg"
+    ]
+  },
+  {
+    id: "obra-84",
+    titulo: "MI VIVIENDA HATO DEL YAQUE SANTIAGO",
+    descripcion: "Mi Vivienda Hato del Yaque beneficia a más de 4 mil personas que vivían en condiciones de vulnerabilidad a las orillas de cañadas y ríos de Arroyo Gurabo.",
+    inversion: "INVERSIÓN RD$ 2,796 MILLONES",
+    region: "Santiago",
+    tipo_de_obra: "Vivienda",
+    ubicacion: {
+      provincia: "Santiago",
+      municipio: "Hato del Yaque",
+      sector: "",
+      lat: 19.45233725,
+      lng: -70.80056143
+    },
+    imagenes: [
+      "https://i.imgur.com/2MvxUdj.jpeg"
+    ]
+  },
+  {
+    id: "obra-85",
+    titulo: "ENTRADA DE SANTIAGO AUT. DUARTE",
+    descripcion: "Modernización del tramo desde el aeropuerto hasta la fortaleza.",
+    inversion: "INVERSIÓN RD$ 1,108.6 MILLONES",
+    region: "Santiago",
+    tipo_de_obra: "Infraestructura Vial",
+    ubicacion: {
+      provincia: "Santiago",
+      municipio: "",
+      sector: "",
+      lat: 18.52380577,
+      lng: -70.01063873
+    },
+    imagenes: [
+      "https://i.imgur.com/UHCDYUc.jpeg"
+    ]
+  },
+  {
+    id: "obra-86",
+    titulo: "TERMINACIÓN Y REHABILITACIÓN CIRCUNVALACIÓN NORTE",
+    descripcion: "INFRAESTRUCTURA SOCIAL Y DE SERVICIOS Para conectar Tamboril con Cienfuegos y mantenimiento a esta importante vía.",
+    inversion: "INVERSIÓN RD$ 1,200 MILLONES",
+    region: "Santiago",
+    tipo_de_obra: "Infraestructura Vial",
+    ubicacion: {
+      provincia: "Santiago",
+      municipio: "",
+      sector: "",
+      lat: 19.51534487,
+      lng: -70.68801885
+    },
+    imagenes: [
+      "https://i.imgur.com/ZYVkIt6.jpeg"
+    ]
+  },
+  {
+    id: "obra-87",
+    titulo: "CONSTRUCCIÓN DE LA CARRETERA LA CUMBRE -HERMANAS MIRABAL-TAMBORIL -EL GUAZUMAL",
+    descripcion: "",
+    inversion: "INVERSIÓN RD$ 858 MILLONES",
+    region: "Santiago",
+    tipo_de_obra: "Infraestructura Vial",
+    ubicacion: {
+      provincia: "Santiago",
+      municipio: "",
+      sector: "",
+      lat: 19.54813137,
+      lng: -70.62140126
+    },
+    imagenes: [
+      "https://i.imgur.com/mEqYrSM.jpeg"
+    ]
+  },
+  {
+    id: "obra-88",
+    titulo: "CONSTRUCCIÓN CARRETERA JUAN VERA-HIGO DE AGUA-PALO ALTO",
+    descripcion: "INFRAESTRUCTURA SOCIAL Y DE SERVICIOS",
+    inversion: "INVERSIÓN RD$ 251 MILLONES",
+    region: "Santiago",
+    tipo_de_obra: "Infraestructura Vial",
+    ubicacion: {
+      provincia: "Santiago",
+      municipio: "",
+      sector: "",
+      lat: 19.54688131,
+      lng: -70.63480499
+    },
+    imagenes: [
+      "https://i.imgur.com/QY8s2gE.jpeg"
+    ]
+  },
+  {
+    id: "obra-89",
+    titulo: "SANEAMIENTO Y RECUPERACIÓN ARROYO GURABO",
+    descripcion: "INFRAESTRUCTURA SOCIAL Y DE SERVICIOS",
+    inversion: "INVERSIÓN RD$ 1,500 MILLONES",
+    region: "Santiago",
+    tipo_de_obra: "Desarrollo Urbano",
+    ubicacion: {
+      provincia: "Santiago",
+      municipio: "",
+      sector: "",
+      lat: 19.47341338,
+      lng: -70.70786925
+    },
+    imagenes: [
+      "https://i.imgur.com/CN6dqfk.jpeg"
+    ]
+  },
+  {
+    id: "obra-90",
+    titulo: "RECUPERACIÓN DEL CENTRO HISTÓRICO Santiago.",
+    descripcion: "",
+    inversion: "INVERSIÓN RD$ 1,200 MILLONES",
+    region: "Santiago",
+    tipo_de_obra: "Desarrollo Urbano",
+    ubicacion: {
+      provincia: "Santiago",
+      municipio: "",
+      sector: "",
+      lat: 19.45203418,
+      lng: -70.70505769
+    },
+    imagenes: [
+      "https://i.imgur.com/CN6dqfk.jpeg"
+    ]
+  },
+  {
+    id: "obra-91",
+    titulo: "HOSPITAL SAN JOSÉ DE LAS MATAS SANTIAGO",
+    descripcion: "El hospital municipal dispondrá áreas de emergencia, hospitalización, imágenes, inmunizaciones, un laboratorio y una farmacia.",
+    inversion: "INVERSIÓN RD$ 1,253 MILLONES",
+    region: "Santiago",
+    tipo_de_obra: "Desarrollo Urbano",
+    ubicacion: {
+      provincia: "Santiago",
+      municipio: "",
+      sector: "",
+      lat: 19.34342053,
+      lng: -70.92868537
+    },
+    imagenes: [
+      "https://i.imgur.com/WnKIF7l.jpeg"
+    ]
+  },
+  {
+    id: "obra-92",
+    titulo: "CONSTRUCCIÓN MURO DE GAVIÓNES CANAL MONSIEUR BOGAERT",
+    descripcion: "",
+    inversion: "INVERSIÓN RD$ 110 MILLONES",
+    region: "Santiago",
+    tipo_de_obra: "Desarrollo Urbano",
+    ubicacion: {
+      provincia: "Santiago",
+      municipio: "",
+      sector: "",
+      lat: 19.49894004,
+      lng: -70.7339197
+    },
+    imagenes: [
+      "https://i.imgur.com/KaNGtLp.jpeg"
+    ]
+  },
+  {
+    id: "obra-93",
+    titulo: "CIRCUNVALACIÓN NAVARRETE, SANTIAGO EN DESARROLLO",
+    descripcion: "",
+    inversion: "",
+    region: "Santiago",
+    tipo_de_obra: "Infraestructura Vial",
+    ubicacion: {
+      provincia: "Santiago",
+      municipio: "",
+      sector: "",
+      lat: 19.57203439,
+      lng: -70.86273469
+    },
+    imagenes: [
+      "https://i.imgur.com/XbpJVxZ.jpeg"
+    ]
+  },
+  {
+    id: "obra-94",
+    titulo: "MI VIVIENDA LOS SALADOS",
+    descripcion: "",
+    inversion: "INVERSIÓN RD$ 1,505 MILLONES",
+    region: "Santiago",
+    tipo_de_obra: "Vivienda",
+    ubicacion: {
+      provincia: "Santiago",
+      municipio: "",
+      sector: "",
+      lat: 19.49809719,
+      lng: -70.72106244
+    },
+    imagenes: [
+      "https://i.imgur.com/iGRc2JQ.jpeg"
+    ]
+  },
+  {
+    id: "obra-95",
+    titulo: "MI VIVIENDA LA BARRANQUITA",
+    descripcion: "",
+    inversion: "INVERSIÓN RD$ 313 MILLONES",
+    region: "Santiago",
+    tipo_de_obra: "Vivienda",
+    ubicacion: {
+      provincia: "Santiago",
+      municipio: "",
+      sector: "",
+      lat: 19.41752757,
+      lng: -70.73113553
+    },
+    imagenes: [
+      "https://i.imgur.com/pyw7e2z.jpeg"
+    ]
+  },
+  {
+    id: "obra-96",
+    titulo: "REHABILITACIÓN DE CARRETERA JOAQUÍN BALAGUER SANTIAGO - NAVARRETE",
+    descripcion: "",
+    inversion: "INVERSIÓN RD$ 496.6 MILLONES",
+    region: "Santiago",
+    tipo_de_obra: "Infraestructura Vial",
+    ubicacion: {
+      provincia: "Santiago",
+      municipio: "",
+      sector: "",
+      lat: 19.53582654,
+      lng: -70.78642553
+    },
+    imagenes: [
+      "https://i.imgur.com/Rz9Tzne.jpeg"
+    ]
+  },
+  {
+    id: "obra-97",
+    titulo: "Modernicación AVENIDA LAS CARRERAS ESQ. 30 DE MARZO",
+    descripcion: "",
+    inversion: "INVERSIÓN RD$ 480 MILLONES",
+    region: "Santiago",
+    tipo_de_obra: "Infraestructura Vial",
+    ubicacion: {
+      provincia: "Santiago",
+      municipio: "",
+      sector: "",
+      lat: 19.45482556,
+      lng: -70.69937677
+    },
+    imagenes: [
+      "https://i.imgur.com/DlElFhB.jpeg"
+    ]
+  },
+  {
+    id: "obra-98",
+    titulo: "CONSTRUCCIÓN Hospital Municipal San José de las Matas",
+    descripcion: "",
+    inversion: "INVERSIÓN RD$ 1,253 MILLONES",
+    region: "Santiago",
+    tipo_de_obra: "Salud",
+    ubicacion: {
+      provincia: "Santiago",
+      municipio: "San José de las Matas",
+      sector: "",
+      lat: 19.34336389,
+      lng: -70.93448966
+    },
+    imagenes: [
+      "https://i.imgur.com/PnCmoGi.jpeg"
+    ]
+  },
+  {
+    id: "obra-99",
+    titulo: "remozamiento y ampliación de emergencia Hospital municipal de tamboril Dr. Jorge Armando Martínez",
+    descripcion: "",
+    inversion: "INVERSIÓN RD$ 143.6 MILLONES",
+    region: "Santiago",
+    tipo_de_obra: "Salud",
+    ubicacion: {
+      provincia: "Santiago",
+      municipio: "Tamboril",
+      sector: "",
+      lat: 19.48655617,
+      lng: -70.61620386
+    },
+    imagenes: [
+      "https://i.imgur.com/vy3dMHa.jpeg"
+    ]
+  },
+  {
+    id: "obra-100",
+    titulo: "RECONSTRUCCIÓN CARRETERA SAJOMA-PEDREGAL SANTIAGO",
+    descripcion: "Esta importante obra forma parte de un conjunto de intervenciones viales que incluyeron también calles internas de los sectores 3 Cruces y La Mejía",
+    inversion: "INVERSIÓN RD$ +397 MILLONES",
+    region: "Santiago",
+    tipo_de_obra: "Infraestructura Vial",
+    ubicacion: {
+      provincia: "Santiago",
+      municipio: "San José de las Matas",
+      sector: "",
+      lat: 19.32752035,
+      lng: -70.89267372
+    },
+    imagenes: [
+      "https://i.imgur.com/IjEMpFN.jpeg"
+    ]
+  },
+  {
+    id: "obra-101",
+    titulo: "CARRETERA BAO LA GALETA",
+    descripcion: "6.98 km de carretera en las comunidades Bao, La Galeta, La Hoya, La Virgen y El Cuartel.",
+    inversion: "INVERSIÓN RD$ 242 MILLONES",
+    region: "Santiago",
+    tipo_de_obra: "Infraestructura Vial",
+    ubicacion: {
+      provincia: "Santiago",
+      municipio: "La Galeta",
+      sector: "",
+      lat: 19.42816673,
+      lng: -70.69541144
+    },
+    imagenes: [
+      "https://i.imgur.com/b2lTSlV.jpeg"
+    ]
+  },
+  {
+    id: "obra-102",
+    titulo: "CENTRO EDUCATIVO CENTRO EDUCATIVO JOSÉ RAFAEL ABINADER Hato del Yaque, Santiago",
+    descripcion: "",
+    inversion: "INVERSIÓN RD$ 123.6 MILLONES",
+    region: "Santiago",
+    tipo_de_obra: "Educación",
+    ubicacion: {
+      provincia: "Santiago",
+      municipio: "Hato del Yaque",
+      sector: "",
+      lat: 19.45194342,
+      lng: -70.78325915
+    },
+    imagenes: [
+      "https://i.imgur.com/aQvb5jK.jpeg"
+    ]
+  },
+  {
+    id: "obra-103",
+    titulo: "AMPLICACIÓN CENTRO EDUCATIVO JOSÉ RAÚL CABRERA UREÑA EL PAPAYO, SANTIAGO",
+    descripcion: "La escuela de nivel secundario cuenta con 26 aulas que benefician a 770 niños y niñas",
+    inversion: "INVERSIÓN RD$ 156.5 MILLONES",
+    region: "Santiago",
+    tipo_de_obra: "Educación",
+    ubicacion: {
+      provincia: "Santiago",
+      municipio: "El Papayo",
+      sector: "",
+      lat: 19.41171527,
+      lng: -70.68518708
+    },
+    imagenes: [
+      "https://i.imgur.com/LI0TJjB.jpeg"
+    ]
+  },
+  {
+    id: "obra-104",
+    titulo: "CENTRO EDUCATIVO MARÍA SECUNDINA TORRES SIRÍ MONTE ADENTRO, SANTIAGO",
+    descripcion: "Cuenta con 24 aulas y tiene capacidad para 830 estudiantes.",
+    inversion: "INVERSIÓN RD$ 164 MILLONES",
+    region: "Santiago",
+    tipo_de_obra: "Educación",
+    ubicacion: {
+      provincia: "Santiago",
+      municipio: "Monte Adentro",
+      sector: "",
+      lat: 19.39320119,
+      lng: -70.65520344
+    },
+    imagenes: [
+      "https://i.imgur.com/asmLf0B.jpeg"
+    ]
+  },
+  {
+    id: "obra-105",
+    titulo: "CENTRO PERIFÉRICO LA JOYA",
+    descripcion: "El nuevo Centro Periférico La Joya, en Santiago de los Caballeros. Un centro que acerca las atenciones de salud con calidad a la comunidad.",
+    inversion: "",
+    region: "Santiago",
+    tipo_de_obra: "Salud",
+    ubicacion: {
+      provincia: "Santiago",
+      municipio: "",
+      sector: "",
+      lat: 19.45568898,
+      lng: -70.71152417
+    },
+    imagenes: [
+      "https://i.imgur.com/6H0Zj7E.jpeg"
+    ]
+  },
+  {
+    id: "obra-106",
+    titulo: "HOSPITAL JOSÉ MARÍA CABRAL Y BÁEZ",
+    descripcion: "Remozamiento de áreas, equipos, adecuación del bloque quirúrgico, esterilización y área de emergencia.",
+    inversion: "INVERSIÓN RD$ 2800 MILLONES",
+    region: "Santiago",
+    tipo_de_obra: "Salud",
+    ubicacion: {
+      provincia: "Santiago",
+      municipio: "",
+      sector: "",
+      lat: 19.45839671,
+      lng: -70.69917504
+    },
+    imagenes: [
+      "https://i.imgur.com/RNUjNvd.jpeg"
+    ]
+  },
+  {
+    id: "obra-107",
+    titulo: "DESTACAMENTO POLICÍA NACIONAL MUNICIPIO PUÑAL SANTIAGO",
+    descripcion: "",
+    inversion: "",
+    region: "Santiago",
+    tipo_de_obra: "Seguridad",
+    ubicacion: {
+      provincia: "Santiago",
+      municipio: "Puñal",
+      sector: "",
+      lat: 19.39089295,
+      lng: -70.62674012
+    },
+    imagenes: [
+      "https://i.imgur.com/GC0NSMD.jpeg"
+    ]
+  },
+  {
+    id: "obra-108",
+    titulo: "PUENTE PUÑAL",
+    descripcion: "",
+    inversion: "",
+    region: "Santiago",
+    tipo_de_obra: "Infraestructura Vial",
+    ubicacion: {
+      provincia: "Santiago",
+      municipio: "Puñal",
+      sector: "",
+      lat: 19.40235518,
+      lng: -70.653302
+    },
+    imagenes: [
+      "https://i.imgur.com/MkeAptb.jpeg"
+    ]
+  },
+  {
+    id: "obra-109",
+    titulo: "AMPLIACIÓN ACUEDUCTO NAVARRETE",
+    descripcion: "En desarrollo",
+    inversion: "INVERSIÓN RD$ 1000 MILLONES",
+    region: "Santiago",
+    tipo_de_obra: "Infraestructura Vial",
+    ubicacion: {
+      provincia: "Santiago",
+      municipio: "Navarrete",
+      sector: "",
+      lat: 19.59588225,
+      lng: -70.8633379
+    },
+    imagenes: [
+      "https://i.imgur.com/8C7IFaN.png"
+    ]
+  },
+  {
+    id: "obra-110",
+    titulo: "Carretera GUAYABAL DE SANTIAGO",
+    descripcion: "Asfaltado en el distrito municipal de Guayabal, municipio de Puñal, en Santiago, varias calles del centro del poblado.",
+    inversion: "INVERSIÓN RD$ 116.30 MILLONES",
+    region: "Santiago",
+    tipo_de_obra: "Infraestructura Vial",
+    ubicacion: {
+      provincia: "Santiago",
+      municipio: "Guayabal",
+      sector: "",
+      lat: 19.37916531,
+      lng: -70.63475966
+    },
+    imagenes: [
+      "https://i.imgur.com/QSPhM4a.jpeg"
+    ]
+  },
+  {
+    id: "obra-111",
+    titulo: "PROYECTO CEDI-MUJER",
+    descripcion: "El proyecto Ciudad Mujer ejecutado por el Gabinete de Política Social ha materializado el diseño, la construcción, equipamiento y puesta en operación de dos Centros de Desarrollo Integral para la Mujer (CEDI-Mujer) en la provincia de Santiago con el objetivo de ofrecer, bajo un mismo techo, servicios integrales de atención, protección y empoderamiento de la mujer.",
+    inversion: "",
+    region: "Santiago",
+    tipo_de_obra: "Salud",
+    ubicacion: {
+      provincia: "Santiago",
+      municipio: "",
+      sector: "",
+      lat: 19.45658222,
+      lng: -70.72488312
+    },
+    imagenes: [
+      "https://i.imgur.com/85pYWPy.jpeg"
+    ]
+  },
+  {
+    id: "obra-112",
+    titulo: "Estación transferencia Tamboril",
+    descripcion: "Transferencia Residuos sólidos",
+    inversion: "",
+    region: "Santiago",
+    tipo_de_obra: "Desarrollo Urbano",
+    ubicacion: {
+      provincia: "Santiago",
+      municipio: "Tamboril",
+      sector: "",
+      lat: 19.45658222,
+      lng: -70.72488312
+    },
+    imagenes: [
+      "https://i.imgur.com/vVUeECl.png"
+    ]
+  }
 ];
