@@ -51,8 +51,8 @@ export function MapFilters({
     setFilters({ provincias: [], regiones: [], tiposDeObra: [] });
 
   const FilterForm = (
-    <div className="space-y-3">
-      <div>
+    <div className="flex flex-col sm:flex-row space-y-3">
+      <div className="flex-1 px-0 sm:px-2">
         <label className="text-sm font-medium mb-2 block">Provincias</label>
         <ProvinciasCombobox
           opciones={provincias}
@@ -61,7 +61,7 @@ export function MapFilters({
         />
       </div>
 
-      <div>
+      <div className="flex-1 px-0 sm:px-2">
         <label className="text-sm font-medium mb-2 block">Regiones</label>
         <ProvinciasCombobox
           opciones={regiones}
@@ -71,7 +71,7 @@ export function MapFilters({
         />
       </div>
 
-      <div>
+      <div className="flex-1 px-0 sm:px-2">
         <label className="text-sm font-medium mb-2 block">Tipos de obra</label>
         <ProvinciasCombobox
           opciones={tiposDeObra}
@@ -81,8 +81,8 @@ export function MapFilters({
         />
       </div>
 
-      <div className="flex items-center justify-between pt-2">
-        <div className="text-xs text-muted-foreground">{total} obras</div>
+      <div className="flex-1 px-2 justify-items-center sm:justify-items-end pt-2 text-center sm:text-right">
+        <div className="text-xs px-3 text-muted-foreground">{total} obras</div>
         <Button variant="ghost" size="sm" onClick={clearFilters}>
           Limpiar
         </Button>
@@ -107,8 +107,8 @@ export function MapFilters({
 
       <div
         className={cn(
-          isFixed ? "fixed top-4 left-4" : "absolute top-4 left-4",
-          "z-20 w-[min(92vw,360px)]",
+          isFixed ? "relative" : "relative",
+          "z-20 container mx-auto my-8 px-4",
           collapsed ? "hidden md:block" : "block"
         )}
       >
@@ -116,7 +116,7 @@ export function MapFilters({
           <CardHeader className="pb-2 flex items-center justify-between">
             <CardTitle className="text-base">Filtros ({total})</CardTitle>
             <div className="flex items-center gap-2">
-              <div className="md:hidden">
+              <div className="hidden">
                 <Button
                   size="icon"
                   variant="ghost"
@@ -126,7 +126,7 @@ export function MapFilters({
                   <SlidersHorizontal size={18} />
                 </Button>
               </div>
-              <div className="hidden md:block">
+              <div className="hidden">
                 <Button size="sm" variant="ghost" onClick={() => setCollapsed((v) => !v)}>
                   {collapsed ? "Mostrar" : "Ocultar"}
                 </Button>

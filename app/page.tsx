@@ -121,7 +121,7 @@ export default function Home() {
       </section>
 
 
-      <div className="w-full m-auto" id="home-client">
+      <div className="w-full m-auto mb-96 sm:mb-48" id="home-client">
         <HomeClient />
       </div> 
 

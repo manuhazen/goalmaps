@@ -155,7 +155,7 @@ export function ObrasMap() {
       {/* Botón Reset */}
       <button
         onClick={handleResetView}
-        className="absolute top-4 right-20 z-10 bg-white shadow-md px-3 py-1 rounded text-sm font-medium hover:bg-gray-100"
+        className="absolute top-57 right-20 z-10 bg-white shadow-md px-3 py-1 rounded text-sm font-medium hover:bg-gray-100"
       >
         Ajustar Mapa
       </button>
