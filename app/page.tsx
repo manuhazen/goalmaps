@@ -62,7 +62,7 @@ export default function Home() {
         <div className="container mx-auto flex flex-row justify-center items-center content-center gap-5 p-0 sm:p-5 m-5 w-full flex-wrap">
             <div className="w-full mb-8 px-4 flex items-center">
               <span className="border-b-4 w-[20px] border-red-500 absolute"></span>
-              <span className="flex-shrink-0 text-2xl text-gray-500 font-extralight pl-8">ACERCA DE NUESTRA MISIÓN</span>
+              <span className="flex-shrink-0 text-2xl text-gray-500 font-light pl-8">ACERCA DE NUESTRA MISIÓN</span>
             </div>
           <div className="flex-1 px-2 py-2 order-1 basis-0  shrink-1 self-auto">
             <div className="p-0">
@@ -71,11 +71,11 @@ export default function Home() {
           </div>
           <div className="flex-1 px-2 py-2 order-2 basis-0 shrink-1 self-auto">
             <div className="p-0">
-              <p className="text-gray-500 text-md font-extralight leading-6 w-96 px-3 sm:px-0 sm:text-left text-center">Construyendo las obras que generan oportunidades y mejoran la calidad de vida, donde la gente tiene sus raíces. Nuestro compromiso es crear infraestructura que impulse el desarrollo sostenible y la prosperidad de todos los dominicanos.</p>
+              <p className="text-gray-500 text-md font-regular leading-6 w-96 px-3 sm:px-0 sm:text-left text-center">Construyendo las obras que generan oportunidades y mejoran la calidad de vida, donde la gente tiene sus raíces. Nuestro compromiso es crear infraestructura que impulse el desarrollo sostenible y la prosperidad de todos los dominicanos.</p>
             </div>
           </div>
         </div>
-          <div className="box-border px-3 mx-auto border-solid sm:px-0 container mt-12">
+          <div className="box-border px-3 mx-auto border-solid sm:px-0 container mt-12 sm:mt-24">
               <div className="grid grid-cols-1 mt-4 leading-7 text-gray-900 border-0 border-gray-200 sm:mt-6 md:mt-8 gap-0 lg:grid-cols-3">
                   {/* <!-- Card 1 --> */}
                   <div className="relative w-full z-10 flex flex-col items-center max-w-md p-8 place-content-center h-full  mx-auto my-0 bg-white">
@@ -105,7 +105,7 @@ export default function Home() {
         <div className="container mx-auto flex flex-row justify-center items-center content-center gap-5 p-0 sm:p-5 m-5 w-full flex-wrap">
             <div className="w-full mb-8 px-4 flex items-center">
               <span className="border-b-4 w-[20px] border-red-500 absolute"></span>
-              <span className="flex-shrink-0 text-2xl text-gray-500 font-extralight pl-8">INFRAESTRUCTURA NACIONAL</span>
+              <span className="flex-shrink-0 text-2xl text-gray-500 font-light pl-8">INFRAESTRUCTURA NACIONAL</span>
             </div>
           <div className="flex-1 px-2 py-2 order-1 basis-0  shrink-1 self-auto">
             <div className="p-0">
@@ -114,7 +114,7 @@ export default function Home() {
           </div>
           <div className="flex-1 px-2 py-2 order-2 basis-0 shrink-1 self-auto">
             <div className="p-0">
-              <p className="text-gray-500 text-md font-extralight leading-6 w-96 px-3 sm:px-0">Desde carreteras que conectan comunidades hasta hospitales que salvan vidas, cada proyecto representa nuestro compromiso con el desarrollo integral de la República Dominicana.</p>
+              <p className="text-gray-500 text-md font-regular leading-6 w-96 px-3 sm:px-0">Desde carreteras que conectan comunidades hasta hospitales que salvan vidas, cada proyecto representa nuestro compromiso con el desarrollo integral de la República Dominicana.</p>
             </div>
           </div>
         </div>
