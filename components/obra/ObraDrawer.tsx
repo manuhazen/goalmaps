@@ -10,7 +10,7 @@ export function ObraDrawer({ obra, open, onOpenChange }: { obra: Obra | null; op
 
   return (
     <Drawer open={open} onOpenChange={onOpenChange} direction="right">
-      <DrawerContent className="w-full sm:max-w-md">
+      <DrawerContent className="w-full sm:max-w-md !overflow-auto">
         <DrawerHeader>
           <img className="w-72 mx-auto" src="/logopresidencia.svg" alt="Logo Presidencia" />
           <DrawerTitle>{obra?.titulo ?? "Obra"}</DrawerTitle>
